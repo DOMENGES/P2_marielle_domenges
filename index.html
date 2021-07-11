@@ -3,99 +3,181 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="reservia.css"/>
+        <link rel="stylesheet" href="./header.css"/>
+        <link rel="stylesheet" href="./Hebergements.css"/>
+        <link rel="stylesheet" href="./les plus populaires.css"/>
+        <link rel="stylesheet" href="./activites.css"/>
+        <link rel="stylesheet" href="./footer.css"/>
+        
         <title>Reservia</title>
         <script src="https://kit.fontawesome.com/fb02caddfb.js" crossorigin="anonymous"></script>
     </head>
     <body>
     
-<!--Header-->
-<header>
-    <!--logo et ancres-->
-    <p>
-      <img src="Reservia@3x.png" alt="logo_Reservia"/>
-      <nav>
-      <a href="#Hébergements">Hébergements</a>
-      <a href="#Activités">Activités</a>
-      <h1>S'inscrire</h1>
-      </nav>
-    </p>
-</header>
-
-<!--Section 1 Introduction saisie ville sélection filtres-->
-<div class="Introduction">
-    <!--titre et formulaire de saisie et boutons filtres-->
-    <p><h1>Trouvez votre hébergement pour des vacances de rêve</h1></p>
-    <p><h2>En plein centre ville ou en pleine nature</h2></p>
-    <form method="post" action="traitement.php">
-        <p>
-            <input type="text" name="ville"/>
-        </p>
-        <p>
-            <input type="submit"value="Rechercher"/>
-        </p>
-    </form>
-    <p><h1>Filtres</h1>
-        <figure><i class="fas fa-money-bill-wave"></i>
-        <h3>Economique</h3></figure>
-        <figure><i class="fas fa-child"></i>
-        <h3>Familial</h3></figure></p>
-        <figure><i class="fas fa-heart"></i></figure>
-        <h3>Romantique</h3>
-        <figure><i class="fas fa-dog"></i></figure>
-        <h3>Animaux autorisés</h3>
-        </p>
-</div>
-    
-
-<!--Section 2 Les plus populaires-->
-<div class="les plus populaires">
+        <!--Header-->
+        <header>
+            <!--logo et ancres-->
+            <img src="Reservia@3x.png" alt="logo_Reservia"/>
+            <nav class="menu">
+                <ul>
+                  <li><a href="#hebergements">Hébergements</a></li>
+                  <li><a href="#activites">Activités</a></li>
+                  <li>s'incrire</li>
+                </ul>
+              </nav>
+              <nav class="saisie ville">
+                <p><h1>Trouvez votre hébergement pour des vacances de rêve</h1></p>
+                <p><h2>En plein centre ville ou en pleine nature</h2></p>
+                <form method="post" action="traitement.php">
+                    <p>
+                        <input type="text" name="ville"/>
+                    </p>
+                    <p>
+                        <input type="submit"value="Rechercher"/>
+                    </p>
+                </form>
+                <nav class="filtres">
+                    <p><h1>Filtres</h1>
+                    <ul>
+                      <li><a href="#Economique">Economique</a> 
+                        <figure><i class="fas fa-money-bill-wave"></i>
+                        <h3>Economique</h3></figure></li>
+                      <li><a href="#Familial">Familial</a>
+                        <figure><i class="fas fa-child"></i>
+                        <h3>Familial</h3></figure></p></li>
+                      <li><a href="#Romantique">Romantique</a>
+                        <figure><i class="fas fa-heart"></i></figure>
+                        <h3>Romantique</h3></li>
+                      <li><a href="#Animauxautorises">Animaux autorisés</a> <figure><i class="fas fa-dog"></i></figure>
+                        <h3>Animaux autorisés</h3></li>
+                    </ul>
+                </nav>
+        </header>
+<main>
+<section class="les_plus_populaires">
     <!--1 titre-3 paragraphes avec 1 photo-nom de l'hôtel-prix-étoiles popularité-->
     <h1>Les plus populaires</h1><br />
-    <div class="le soleil du matin">
-        <figure><h2>Hôtel Le soleil du matin</h2>
-        <h3>Nuit à partir de 128€</h3>
-        <img src="photos\Hotel_le_soleil_du_matin.jpg" alt="photo le soleil du matin" />
-    <img src=<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></figure>
-    </div>
-    <div class="au coeur de l'eau">    
-    <figure><h2>Au coeur de l'eau Chambres d'hôtes</h2>
-        <h3>Nuit à partir de 71€</h3>
-        <img src="photos\Au_coeur_de_l_eau.jpg" alt="photo_au_coeur_de_l_eau" /></figure>
-    </div>
-    <div class="tout bleu et blanc">
+        <div class="le_soleil_du_matin">
+            <figure><h2>Hôtel Le soleil du matin</h2>
+            <h3>Nuit à partir de 128€</h3>
+            <img src="Projet 2 - Reservia\images\hebergements\4_small\hotellesoleildumatin.jpg" alt="photo le soleil du matin" />
+            <br/>
+            <img src= "<i>fas fa-star"</i>
+            <i>"fas fa-star"</i>
+    
+            </figure>
+        </div>
+        <div class="au_coeur_de_l_eau">    
+            <figure><h2>Au coeur de l'eau Chambres d'hôtes</h2>
+            <h3>Nuit à partir de 71€</h3>
+            <img src="Projet 2 - Reservia\images\hebergements\4_small\aucoeurdeleau.jpg" alt="photo_au_coeur_de_l_eau" /></figure>
+        </div>
+        <div class="tout_bleu_et_blanc">
         <figure><h2>Hôtel Tout bleu et Blanc</h2>
         <h3>Nuit à partir de 68€</h3>
-        <img src="photos\Hotel_tout_bleu_et_blanc.jpg" alt="photo_tout_bleu_et_blanc" /></figure>
-    </div>
-</div>
-
+        <img src="Projet 2 - Reservia\images\hebergements\4_small\hoteltoutbleuetblanc.jpg" alt="photo_tout_bleu_et_blanc" /></figure>
+        </div>
+</section>
 <!--Section 3 Hébergements-->
-<div id="Hébergements">
-    <!--titre-6 paragraphes avec 1 photo-nom de l'hôtel-prix-étoiles popularité-->
-<h1>Hébergements à Marseille</h1><br/>
-
-</div>
+<section id="hebergements">
+    <h1>Hébergements à Marseille</h1>
+    <div class "Aubergelacannebiere">
+        <figure><h2>Auberge La Cannebière</h2>
+        <h3>Nuit à partir de 25€</h3>
+        <img src="Projet 2 - Reservia\images\hebergements\4_small\aubergelacannebiere.jpg" alt="photo auberge la Cannebière" />
+        <img src=<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </figure>
+    </div>
+    <div class "Hotelduport">
+        <figure><h2>Hôtel du port</h2>
+        <h3>Nuit à partir de 52€</h3>
+        <img src="Projet 2 - Reservia\images\hebergements\4_small\hotelduport.jpg" alt="photo hotel du port" />
+        <img src=<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </figure>
+    </div>
+    
+    <div class "Hotellesmouettes">
+        <figure><h2>Hôtel Les mouettes</h2>
+            <h3>Nuit à partir de 76€</h3>
+            <img src="Projet 2 - Reservia\images\hebergements\4_small\hotellesmouettes.jpg" alt="photo hotel les mouettes" />
+            <img src=<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </figure>
+    </div>
+    <div class "Hoteldelamer">
+            <figure><h2>Hôtel de la mer</h2>
+            <h3>Nuit à partir de 46€</h3>
+            <img src="Projet 2 - Reservia\images\hebergements\4_small\hoteldelamer.jpg" alt="photo hotel de la mer" />
+            <img src=<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </figure>  
+    </div>
+    <div class "Aubergelepanier">
+            <figure><h2>Auberge Le Panier</h2>
+            <h3>Nuit à partir de 23€</h3>
+            <img src="Projet 2 - Reservia\images\hebergements\4_small\aubergelepanier.jpg" alt="photo auberge le panier" />
+            <img src=<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </figure>
+    </div>
+    <div class "Hotelchezamina">
+            <figure><h2>Hôtel chez Amina</h2>
+            <h3>Nuit à partir de 95€</h3>
+            <img src="Projet 2 - Reservia\images\hebergements\4_small\hotelchezamina.jpg" alt="photo hotel chez amina" />
+            <img src=<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </figure>   
+    </div>
+</section>
 
 <!--Section 4 Activités-->
-<div id="Activités">
+<section id="activites">
     <h1>Activités à Marseille</h1><br/>
-    <!--titre-6 paragraphes avec 1 photo et sa légende-->
-</div>
+    <div class "vieuxport">
+        <figure><h2>Vieux Port</h2>
+        <img src="Projet 2 - Reservia\images\activites\4_small\vieuxport.jpg" alt="photo vieux port" />
+        </figure>
+    </div>
+    <div class "fortdepomegues">
+        <figure><h2>Fort de Pomègues</h2>        
+        <img src="Projet 2 - Reservia\images\activites\4_small\fortdepomegues.jpg" alt="photo fort de pomegues" />    
+    </div>
+    <div class "ilesdufrioul">
+        <figure><h2>Iles du Frioul</h2>        
+        <img src="Projet 2 - Reservia\images\activites\4_small\ilesdufrioul.jpg" alt="photo iles du frioul" />
+    </div>
+    <div class "parcnationaldescalanques">
+        <figure><h2>Parc National des Calanques</h2>        
+        <img src="Projet 2 - Reservia\images\activites\4_small\parcnationaldescalanques.jpg" alt="phot parc national des calanques" />
+    </div>
+    <div class "notredamedelagarde">
+        <figure><h2>Notre-Dame-de-la-Garde</h2>        
+        <img src="Projet 2 - Reservia\images\activites\4_small\notredamedelagarde.jpg" alt="photo notredamedelagarde" />
+    </div>
+    <div class "parclongchamp">
+        <figure><h2>Parc Longchamp</h2>        
+        <img src="Projet 2 - Reservia\images\activites\4_small\parclongchamp.jpg" alt="photo parclongchamp" />
+    </div>
+</section>
+</main>
 
-<!--Footer-->
-<div class="Footer">
-    <!--3 paragraphes avec titre et liste-->
-<p><h1>A propos</h1><br/>
-<ul><li>Fonctionnement du site</li>
-<li>Conditions générales de vente</li>
-<li>Données et confidentialité</li></ul></p>
-<p><h1>Nos hébergements</h1><br/>
-<ul><li>Charte qualité</li>
-<li>Soumettre votre hôtel</li></ul></p>
-<p><h1>Assistance</h1><br/>
-<ul><li>Centre d'aide</li>
-<li>Nous contacter</li></ul></p>
-</div>
-
+<footer>
+    <nav class="footer">
+        <ul>
+          <li><a href="#Apropos">A propos</a></li>
+          <ul>
+              <li><a href="#Fonctionnementdusite">Fonctionnement du site</a></li>
+              <li><a href="#Conditionsgeneralesdevente">Conditions générales de vente</a></li>
+              <li><a href="#Donneesetconfidentialité">Données et confidentialité</a></li>
+          </ul>
+          <li><a href="#Noshebergements">Nos Hébergements</a></li>
+          <ul>
+            <li><a href="#Chartequalite">Charte qualité</a></li>
+            <li><a href="#Soumettrevotrehotel">Soumettre votre hôtel</a></li>
+            </ul>
+          <li><a href="#Assistance">Assistance</a></li>
+          <ul>
+            <li><a href="#Centredaide">Centre d'aide</a></li>
+            <li><a href="#Nouscontacter">Nous contacter</a></li>
+            </ul>
+        </ul>
+      </nav>
+</footer>
     </body>
 </html>
