@@ -29,16 +29,12 @@
             </div><!--fin logoetancres-->
             <p><h1>Trouvez votre hébergement pour des vacances de rêve</h1></p>
             <p><h2>En plein centre ville ou en pleine nature</h2></p>
-            <div class="saisie_ville">
-                <p>
+            <div class="saisie_ville">              
+                <form method="post" action="">
                 <span><i class="fas fa-map-pin"></i></span>
-                </p> 
-                <p>       
-                <form method="post" action="">       
-                     <span><input type="text" name="ville"/></span>
-                     <button type="button"> Rechercher</button>
+                <span><input type="text" name="ville"/></span>
+                <button type="button"> Rechercher</button>
                 </form>
-                </p>
             </div>
             <div id="filtres">
                     <h1>Filtres</h1>  
@@ -56,6 +52,12 @@
                         <figure><i class="fas fa-dog"></i></figure>
                         </li>
                     </ul>
+            </div>
+            <div class="info_logements_disponibles">
+                <h3>
+                    <i class="fas fa-info-circle"></i>
+                    Plus de 500 logements sont disponibles dans cette ville
+                </h3>
             </div>
         </header>
         <main>
@@ -139,7 +141,9 @@
                 <div class="nometprixetnote">
                     <h2>Hôtel Le soleil du matin</h2>
                     <h3>Nuit à partir de 128€</h3>
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
                 </div>             
             </div><!--fin hotel le soleil du matin-->
             <div class="aucoeurdeleau">
@@ -149,7 +153,9 @@
                 <div class="nometprixetnote">
                     <h2>Au coeur de l'eau Chambres d'hôtes</h2>
                     <h3>Nuit à partir de 71€</h3>
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>                
                 </div>             
             </div><!--fin au coeur de l'eau-->
             <div class="hoteltoutbleuetblanc">
@@ -159,7 +165,9 @@
                 <div class="nometprixetnote">
                     <h2>Hôtel Tout bleu et Blanc</h2>
                     <h3>Nuit à partir de 68€</h3>
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
                 </div>             
             </div><!--fin hoteltoutbleuetblanc--> 
         </div><!--fin les3hotelslespluspopulaires-->     
