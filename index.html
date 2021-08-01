@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/css/reservia.css"/>
         <link rel="stylesheet" href="/css/header.css"/>
         <link rel="stylesheet" href="/css/hebergements.css"/>
+        <link rel="stylesheet" href="/css/villeetfiltres.css"/>
         <link rel="stylesheet" href="/css/les_plus_populaires.css"/>
         <link rel="stylesheet" href="/css/activites.css"/>
         <link rel="stylesheet" href="/css/footer.css"/>
@@ -16,7 +17,7 @@
     </head>
     <body>
         <header>
-            <div id="logoetancres">
+            <!--ajout de logo-->
                 <img src="/images/logo/Reservia@3x.png" alt="logo_Reservia"/>
             <!--menu BOX-->
                 <nav class="menu">
@@ -26,32 +27,36 @@
                     <li>s'incrire</li>
                     </ul>
                 </nav>
-            </div><!--fin logoetancres-->
-            <p><h1>Trouvez votre hébergement pour des vacances de rêve</h1></p>
-            <p><h2>En plein centre ville ou en pleine nature</h2></p>
+        </header>
+        <main>
+        <section class="saisievilleetfiltres">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h2>En plein centre ville ou en pleine nature</h2>
             <div class="saisie_ville">              
-                <form method="post" action="">
-                <div class="iconegeo"><i class="fas fa-map-pin"></i></div>
-                <span><input type="text" name="ville"/></span>
+                <i class="fas fa-map-pin"></i>
+                <input type="text" id="entrer_ville" placeholder="Marseille, France"/>
                 <button type="button"> Rechercher</button>
-                </form>
             </div>
-            <div id="filtres">
-                    <h1>Filtres</h1>  
-                    <ul>
-                      <li><a href="#Economique">Economique</a> 
-                        <figure><i class="far fa-money-bill-alt"></i>                 
-                        </figure></li>
-                      <li><a href="#Familial">Familial</a>
-                        <figure><i class="fas fa-child"></i>
-                        </figure></li>
-                      <li><a href="#Romantique">Romantique</a>
-                        <figure><i class="fas fa-heart"></i></figure>
-                        </li>
-                      <li><a href="#Animauxautorises">Animaux autorisés</a> 
-                        <figure><i class="fas fa-dog"></i></figure>
-                        </li>
-                    </ul>
+            <div class="filtres">
+                <h1>Filtres</h1>  
+                <div class="boutons_filtres">
+                    <button>   
+                        <i class="far fa-money-bill-alt"style="color:#0065FC"></i>
+                        <span class="nom_filtre"> Economique</span>
+                    </button>
+                    <button>
+                        <i class="fas fa-child"style="color:#0065FC"></i>
+                        <span class="nom_filtre">Familial</span>
+                    </button>
+                    <button>
+                        <i class="fas fa-heart"style="color:#0065FC"></i>
+                        <span class="nom_filtre">Romantique</span>
+                    </button>
+                    <button>
+                        <i class="fas fa-dog"style="color:#0065FC"></i>
+                        <span class="nom_filtre">Animaux autorisés</span>
+                    </button>
+                </div>
             </div>
             <div class="info_logements_disponibles">
                 <h3>
@@ -59,8 +64,8 @@
                     Plus de 500 logements sont disponibles dans cette ville
                 </h3>
             </div>
-        </header>
-        <main>
+        </section>
+        
 <section id="aside_et_hebergements">
     <div class="hebergements">
                 <h1>Hébergements à Marseille</h1><br />
@@ -260,27 +265,24 @@
         </main>
 
 <footer>
-    <nav class="footer">
-        <ul>
-          <li><a href="#Apropos">A propos</a></li>
-          <ul>
-              <li><a href="#Fonctionnementdusite">Fonctionnement du site</a></li>
-              <li><a href="#Conditionsgeneralesdevente">Conditions générales de vente</a></li>
-              <li><a href="#Donneesetconfidentialité">Données et confidentialité</a></li>
-          </ul>
-          <li><a href="#Noshebergements">Nos Hébergements</a></li>
-          <ul>
-            <li><a href="#Chartequalite">Charte qualité</a></li>
-            <li><a href="#Soumettrevotrehotel">Soumettre votre hôtel</a></li>
-            </ul>
-          <li><a href="#Assistance">Assistance</a></li>
-          <ul>
-            <li><a href="#Centredaide">Centre d'aide</a></li>
-            <li><a href="#Nouscontacter">Nous contacter</a></li>
-            </ul>
-        </ul>
-      </nav>
 
+        <div class="propos">
+          <h2>A propos</h2>        
+              <h3>Fonctionnement du site<h3>
+              <h3>Conditions générales de vente</h3>
+              <h3>Données et confidentialité</h3>            
+        </div><!--fin propos-->
+        <div class="noshebergements">
+          <h2>Nos Hébergements</h2>
+            <h3>Charte qualité</h3>
+            <h3>Soumettre votre hôtel</h3>
+        </div><!--fin noshebergements-->
+        <div class="assistance">
+          <h2>Assistance</h2>
+            <h3>Centre d'aide</h3>
+            <h3>Nous contacter</h3>
+        </div><!--fin assistance-->
+ 
 </footer>
 
     </body>
