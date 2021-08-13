@@ -1,0 +1,93 @@
+.toutelesactivites
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+padding-left: 37px;
+padding-right: 37px;
+}
+#activites h1
+{
+  padding-left: 37px;
+  margin-top: 50px;
+}
+#activites h2
+{
+  font-size: medium;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.bcalanques img
+{
+  width: 400px;
+  height: 420px;
+  border-radius: 20px 20px 0px 0px;
+}
+.bvieuxport img
+{
+  width: 400px;
+  height: 460px;
+  border-radius: 20px 20px 0px 0px;
+}
+.blagardeetlongchamp img
+{
+  width: 400px;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+  
+}
+.bfortetiles img
+{
+  width: 400px;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+}
+.bvieuxport
+{
+  border-radius: 20px;
+  box-shadow: inset 0 0 0.5em #f2f2f2, 0 0 0.5em #f2f2f2;
+}
+
+.bvieuxport, .bcalanques, a
+{
+  text-decoration: none;
+  color:black
+}
+.bcalanques
+{
+  border-radius: 20px;
+  box-shadow: inset 0 0 0.5em #f2f2f2, 0 0 0.5em #f2f2f2;
+}
+.bfortetiles,.blagardeetlongchamp
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bfortetiles .fortdepomegues
+{
+  border-radius: 20px;
+  box-shadow: inset 0 0 0.5em #f2f2f2, 0 0 0.5em #f2f2f2;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+.bfortetiles .ilesdufrioul
+{
+  border-radius: 20px;
+  box-shadow: inset 0 0 0.5em #f2f2f2, 0 0 0.5em #f2f2f2;
+  padding-bottom: 3px;
+}
+.blagardeetlongchamp .notredamedelagarde
+{
+  border-radius: 20px;
+  box-shadow: inset 0 0 0.5em #f2f2f2, 0 0 0.5em #f2f2f2;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+.blagardeetlongchamp .parclongchamp
+{
+  border-radius: 20px;
+  box-shadow: inset 0 0 0.5em #f2f2f2, 0 0 0.5em #f2f2f2;
+  padding-bottom: 3px;
+}

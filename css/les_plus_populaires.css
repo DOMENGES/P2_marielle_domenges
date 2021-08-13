@@ -1,0 +1,72 @@
+/*mise en forme et alignement du bloc*/
+aside
+{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center;
+    width: 27%;
+}
+/*mise en forme et position en ligne du titre et du logo*/
+.titreetflechequimonte
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 90%;  
+}
+.titreetflechequimonte h1
+{
+    font-size: x-large;
+}
+
+/*alignement vertical au centre du logo*/
+.titreetflechequimonte span
+{
+    align-self: center;
+}
+/*mise en forme des contenants de chaque hotel*/
+/*sur une ligne photo et nomprixetnote*/
+.hotellesoleildumatin, .aucoeurdeleau, .hoteltoutbleuetblanc
+{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width:80%;
+    border-radius: 20px;
+    border : solid 5px white;
+}
+/*disposition en colonne des titres h2 et h3*/
+aside .nometprixetnote .nometprix
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+/*disposition en ligne des 5 étoiles*/
+aside .nometprixetnote .les_etoiles
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+/*mise en forme photo des hotels*/
+aside .photo img
+{border-radius: 20px 0px 0px 20px;
+height: 180px;
+width: 160px;
+margin-right: 10px;
+}
+/*suppression mise en forme lien sur nometprixetnote*/
+aside .nometprixetnote a
+{
+text-decoration: none;
+color: black;
+}
+.color-blue{
+color:red;
+}

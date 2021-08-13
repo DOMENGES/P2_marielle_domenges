@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html> 
 <html lang="fr">
 
     <head>
@@ -44,15 +44,15 @@
                 <div class="boutons_filtres">
                     <!--sur une ligne : logo et nom filtre-->
                     <button>   
-                        <i class="far fa-money-bill-alt"style="color:#0065FC"></i>
+                        <i class="far fa-money-bill-alt" style="color:#0065FC"></i>
                         <span class="nom_filtre"> Economique</span>
                     </button>
                     <button>
-                        <i class="fas fa-child"style="color:#0065FC"></i>
+                        <i class="fas fa-child" style="color:#0065FC"></i>
                         <span class="nom_filtre">Familial</span>
                     </button>
                     <button>
-                        <i class="fas fa-heart"style="color:#0065FC"></i>
+                        <i class="fas fa-heart" style="color:#0065FC"></i>
                         <span class="nom_filtre">Romantique</span>
                     </button>
                     <button>
@@ -63,7 +63,7 @@
             </div>
             <div class="info_logements_disponibles">
                 <h3>
-                    <i class="fas fa-info-circle"style="color:#0065FC"S></i>
+                    <i class="fas fa-info-circle" style="color:#0065FC"></i>
                     Plus de 500 logements sont disponibles dans cette ville
                 </h3>
             </div>
@@ -73,13 +73,13 @@
 <section id="aside_et_hebergements">
     <!--bloc hébergements à Marseille-->
     <div class="hebergements">
-                <h1>Hébergements à Marseille</h1>
+        <h1>Hébergements à Marseille</h1>
                 <!--contenant tous les blocs hotel-->
                 <div class="les_hotels"> 
                     <!--un bloc par hotel contenant 2 blocs :photo et nom+prix+note-->                   
                     <div class="aubergelacannebiere">
                         <!--lien pour clics sur photo et bloc nom+prix+note de l'hotel-->
-                        <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
+                        <a href="#">
                         <div class="photo">                        
                         <img src="/images/hebergements/aubergelacannebiere.jpg" alt="photo auberge la Cannebière" />                           
                         </div>
@@ -87,7 +87,7 @@
                         <div class="nometprixetnote">
                             <h2>Auberge La Cannebières</h2>
                             <h3>Nuit à partir de 25€</h3>                
-                                <i class="fas fa-star" style="color:blue"></i>
+                                <span class="color-blue"> <i class="fas fa-star" style="color:blue"></i></span>
                                 <i class="fas fa-star" style="color:blue"></i>
                                 <i class="fas fa-star" style="color:blue"></i>
                                 <i class="fas fa-star" style="color:blue"></i>
@@ -202,13 +202,15 @@
                     <h2>Hôtel Le soleil du matin</h2>
                     <h3>Nuit à partir de 128€</h3>
                     </div> <!--fin nometprix-->  
-                    <span class="les_etoiles"><!--bloc les étoiles-->
-                        <i class="fas fa-star" style="color:blue"></i>
-                        <i class="fas fa-star" style="color:blue"></i>
-                        <i class="fas fa-star" style="color:blue"></i>
-                        <i class="fas fa-star" style="color:blue"></i>
-                        <i class="fas fa-star" style="color:blue"></i>
-                    </span>
+                    <div class="les_etoiles"><!--bloc les étoiles-->
+                        <span class="color-blue">
+                            <i class="fas fa-star" ></i>
+                        </span>
+                        <span class="color-blue"><i class="fas fa-star"></i></span>
+                        <span class="color-blue"><i class="fas fa-star"></i></span>
+                        <span class="color-blue"><i class="fas fa-star" ></i></span>
+                        <span class="color-blue"><i class="fas fa-star" ></i></span>
+                    </span></div>
                     </a><!--fin lien lorsque clic sur le bloc nomprixnote-->
                 </div>
                    
@@ -256,65 +258,65 @@
         
     </aside>
 </section><!--fin aside et hébergements-->
-<section id="activites"><!--bloc général des activités contenant un bloc titre et un bloc de toutes les activités-->
-    <h1>Activités à Marseille</h1><!--titre du bloc-->
-    <div class="toutelesactivites"><!--quatre blocs contenant les actvités-->        
-        <div class="bvieuxport"><!--bloc une activité-->
-            <!--lien pour cliquer sur la photo ou sur le titre-->
-            <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">                   
-                    <!--photo activité-->
-                    <img src="/images/activites/vieuxport.jpg" alt="photo vieux port" />                   
-                    <h2>Vieux Port</h2><!--bloc titre activité-->
+    <section id="activites"><!--bloc général des activités contenant un bloc titre et un bloc de toutes les activités-->
+        <h1>Activités à Marseille</h1><!--titre du bloc-->
+        <div class="toutelesactivites"><!--quatre blocs contenant les actvités-->        
+            <div class="bvieuxport"><!--bloc une activité-->
+                <!--lien pour cliquer sur la photo ou sur le titre-->
+                <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">                   
+                        <!--photo activité-->
+                        <img src="/images/activites/vieuxport.jpg" alt="photo vieux port" />                   
+                        <h2>Vieux Port</h2><!--bloc titre activité-->
+                </a>
+            </div><!--fin bloc vieux port-->
+            <div class="bfortetiles"><!--bloc deux activités : pomegues et frioul-->
+                    <div class="fortdepomegues">
+                        <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">                      
+
+                            <img src="/images/activites/fortdepomegues.jpg" alt="photo fort de pomegues" />    
+
+                        <h2>Fort de Pomègues</h2>
+                        </a>
+                    </div><!--fin fortdepomegues-->
+                    <div class="ilesdufrioul">
+                        <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
+        
+                            <img src="/images/activites/ilesdufrioul.jpg" alt="photo iles du frioul" />
+
+                        <h2>Iles du Frioul</h2>
+                        </a>
+                    </div><!--fin ilesdufrioul-->
+            </div><!--fin bfortetiles-->
+            <div class="bcalanques"><!--bloc une activité calanques-->
+            <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
+
+        
+                            <img src="/images/activites/parcnationaldescalanques.jpg" alt="phot parc national des calanques" />
+
+                        <h2>Parc National des Calanques</h2>
             </a>
-        </div><!--fin bloc vieux port-->
-        <div class="bfortetiles"><!--bloc deux activités : pomegues et frioul-->
-                <div class="fortdepomegues">
-                    <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">                      
+                    </div><!--fin bcalanques-->
+            <div class="blagardeetlongchamp"><!--bloc 2 activités garde et longchamp-->
+                    <div class="notredamedelagarde">
+                        <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
+        
+                            <img src="/images/activites/notredamedelagarde.jpg" alt="photo notredamedelagarde" />
 
-                        <img src="/images/activites/fortdepomegues.jpg" alt="photo fort de pomegues" />    
+                        <h2>Notre-Dame-de-la-Garde</h2>
+                        </a>
+                    </div><!--fin notredamedelagarde-->
+                    <div class="parclongchamp">
+                        <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
+        
+                            <img src="/images/activites/parclongchamp.jpg" alt="photo parclongchamp" />
 
-                    <h2>Fort de Pomègues</h2>
-                    </a>
-                </div><!--fin fortdepomegues-->
-                <div class="ilesdufrioul">
-                    <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-      
-                        <img src="/images/activites/ilesdufrioul.jpg" alt="photo iles du frioul" />
-
-                    <h2>Iles du Frioul</h2>
-                    </a>
-                </div><!--fin ilesdufrioul-->
-        </div><!--fin bfortetiles-->
-        <div class="bcalanques"><!--bloc une activité calanques-->
-        <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-
-       
-                        <img src="/images/activites/parcnationaldescalanques.jpg" alt="phot parc national des calanques" />
-
-                    <h2>Parc National des Calanques</h2>
-        </a>
-                </div><!--fin bcalanques-->
-        <div class="blagardeetlongchamp"><!--bloc 2 activités garde et longchamp-->
-                <div class="notredamedelagarde">
-                    <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-     
-                        <img src="/images/activites/notredamedelagarde.jpg" alt="photo notredamedelagarde" />
-
-                    <h2>Notre-Dame-de-la-Garde</h2>
-                    </a>
-                </div><!--fin notredamedelagarde-->
-                <div class="parclongchamp">
-                    <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-       
-                        <img src="/images/activites/parclongchamp.jpg" alt="photo parclongchamp" />
-
-                    <h2>Parc Longchamp</h2>
-                    </a>
-                </div><!--fin parclongchamp-->
-        </div><!--fin blagardeetlongchamp-->
-    </div><!--fin toutelesactivites-->
-</section><!--fin activites-->
-        </main>
+                        <h2>Parc Longchamp</h2>
+                        </a>
+                    </div><!--fin parclongchamp-->
+            </div><!--fin blagardeetlongchamp-->
+        </div><!--fin toutelesactivites-->
+    </section><!--fin activites-->
+</main>
 
 <footer>
 

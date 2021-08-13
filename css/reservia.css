@@ -1,0 +1,37 @@
+body
+{
+    background-color: white;
+    color: black; 
+    font-family: raleway;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media all and (max-device-width: 480px)
+{
+    header
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+#aside_et_hebergements
+{display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+footer
+{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+    
+}

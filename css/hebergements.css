@@ -1,0 +1,85 @@
+/*mise en forme bloc hébergements à Marseille*/
+.hebergements
+{background-color: #f2f2f2;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 10px;
+    width: 65%;
+}
+.hebergements h1
+{
+   align-self: flex-start;
+   font-size: x-large;
+}
+.hebergements h2
+{
+    font-size: larger;
+    font-weight:bolder;
+}
+/*en ligne tous les blocs hotel*/
+.hebergements .les_hotels
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+/*mise en forme chaque bloc hotel*/
+/*disposition en colonne bloc photo et bloc nomprixetnote*/
+/*centrer horizontalement les blocs photo et nomprixetnote*/
+.aubergelacannebiere,.hotelduport,.hotellesmouettes,.hoteldelamer,.aubergelepanier,.hotelchezamina
+{
+   
+    margin-right: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    width: 25%;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+/*marge intérieure bloc nomprixetnote*/
+.les_hotels .nometprixetnote
+{
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+    border:solid 3px white;
+}
+
+/*mise en forme et alignement du nom de chaque hotel*/
+.aubergelacannebiere,.hotelduport,.hotellesmouettes,.hoteldelamer,.aubergelepanier,.hotelchezamina, .nometprixetnote h2
+{
+    font-size: medium;
+    font-weight: bold;
+    align-self: flex-start;
+}
+/*mise en forme prix de chaque hotel*/
+.aubergelacannebiere,.hotelduport,.hotellesmouettes,.hoteldelamer,.aubergelepanier,.hotelchezamina, .nometprixetnote h3
+{
+    font-size: small;
+font-weight: lighter;
+}
+/*dimension et bordure de chaque photo*/
+.les_hotels .photo img
+{
+    height: 170px;
+    width: 312px;
+    border-radius: 15px 15px 0px 0px;
+    border : solid 3px white;
+    border-bottom: none;
+}
+/*suppression soulignement et couleur lien de chaque hotel*/
+.les_hotels a
+{
+    text-decoration: none;
+    color: black;
+}
+

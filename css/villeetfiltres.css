@@ -1,0 +1,122 @@
+.saisievilleetfiltres h1
+{
+   font-weight: bolder;
+}
+@media all and (max-device-width: 480px)
+{
+    .saisievilleetfiltres h1
+    {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .saisie_ville
+    {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+.saisievilleetfiltres h2
+{
+    font-weight: lighter;
+    font-size: medium;
+}
+
+/*texte d'introduction + formulaire saisie et recherche ville + filtres + texte logements disponibles*/
+.saisie_ville
+{
+   /*aligner à gauche les blocs du bouton recherche villes */
+    display: flex;
+    justify-content: start;
+
+}
+/*mise en forme logo situation*/
+.saisie_ville i
+{
+    background-color: #F2F2F2;
+    padding: 22px;
+    border-radius: 20px 0px 0px 20px;
+    border-left:solid 3px #F2F2F2;
+    border-bottom:solid 3px #F2F2F2;
+    border-top: solid 3px #F2F2F2;
+
+}
+/*mise en forme formulaire de saisie*/
+.saisie_ville input
+{
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 0px;
+    font-family: raleway;
+    font-size: medium;
+    font-weight:bolder;
+    border-bottom:solid 3px #F2F2F2;
+    border-top: solid 3px #F2F2F2;
+    border-left: none;
+    border-right: none;
+    
+}
+/*mise en forme bouton rechercher*/
+.saisie_ville button
+{
+    border-bottom:solid 3px #F2F2F2;
+    border-top: solid 3px #F2F2F2;
+    border-right: solid 3px #F2F2F2;
+    border-left: none;
+    background-color: #0065fc;
+    padding: 15px;
+    font-family: raleway;
+    font-size: medium;
+    font-weight:bolder;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+}
+/*sur une ligne tous les filtres*/
+.filtres
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    margin-top: 30px;
+}
+.filtres h1
+{
+    margin-right: 20px;
+    font-size: medium;
+}
+/*mise en forme chaque bouton*/
+.boutons_filtres button
+{
+    margin-right: 30px;
+    border-radius: 25px;
+    padding-left: 0px;
+    background-color: white;
+    border:solid 3px #F2F2F2; 
+}
+/*mise en forme survol bouton*/
+.boutons_filtres button:hover
+{
+    color: blueviolet;
+    background-color: cyan;
+}
+/*mise en forme logo du bouton*/
+.boutons_filtres button i
+{
+    padding: 10px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    margin-left: none;
+}
+/*mise en forme texte bouton*/
+.boutons_filtres button .nom_filtre
+{
+    font-size: medium;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.info_logements_disponibles h3
+{
+    font-size: medium;
+    font-weight: lighter;
+}

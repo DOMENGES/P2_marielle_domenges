@@ -1,0 +1,24 @@
+/*logo Reservia et menu en ligne*/
+header img
+{
+    width: 100px;
+}
+/*alignement en ligne du menu*/
+/*suppression puce*/
+header nav ul
+{
+display: flex;
+flex-direction: row;
+list-style-type: none;
+}
+/*espacement-retrait droit de chaque ligne*/
+header nav li
+{
+padding-right: 30px;
+}
+/*suppression soulignement des liens ancres*/
+header nav li a
+{
+    text-decoration: none;
+    color: #0065FC;
+}
