@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable:no"/>
         <script src="https://kit.fontawesome.com/5f5fe7de0e.js" crossorigin="anonymous"></script>
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
         <link rel="stylesheet" href="/css/reservia.css"/>
@@ -30,7 +31,7 @@
         </header>
         <main>
         <!--boite contenant les blocs -texte-formulaire+bouton rechercher-filtres-texte logements disponibles-->
-        <section class="saisievilleetfiltres">
+        <div class="saisievilleetfiltres">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <h2>En plein centre ville ou en pleine nature</h2>
             <div class="saisie_ville">              
@@ -44,217 +45,244 @@
                 <div class="boutons_filtres">
                     <!--sur une ligne : logo et nom filtre-->
                     <button>   
-                        <i class="far fa-money-bill-alt" style="color:#0065FC"></i>
+                        <span class="money"><i class="far fa-money-bill-alt"></i></span>
                         <span class="nom_filtre"> Economique</span>
                     </button>
                     <button>
-                        <i class="fas fa-child" style="color:#0065FC"></i>
+                        <span class="child"><i class="fas fa-child"></i></span>
                         <span class="nom_filtre">Familial</span>
                     </button>
                     <button>
-                        <i class="fas fa-heart" style="color:#0065FC"></i>
+                        <span class="love"><i class="fas fa-heart"></i></span>
                         <span class="nom_filtre">Romantique</span>
                     </button>
                     <button>
-                        <i class="fas fa-dog"style="color:#0065FC"></i>
+                        <span class="dog"><i class="fas fa-dog"></i></span>
                         <span class="nom_filtre">Animaux autorisés</span>
                     </button>
                 </div>
             </div>
             <div class="info_logements_disponibles">
                 <h3>
-                    <i class="fas fa-info-circle" style="color:#0065FC"></i>
-                    Plus de 500 logements sont disponibles dans cette ville
+                    <span class="information"><i class="fas fa-info-circle"></i></span>
+                    <p> Plus de 500 logements sont disponibles dans cette ville</p>
                 </h3>
             </div>
-        </section>
+        </div>
         
 <!--deux blocs : hébergements et les plus populaires-->
 <section id="aside_et_hebergements">
     <!--bloc hébergements à Marseille-->
     <div class="hebergements">
         <h1>Hébergements à Marseille</h1>
-                <!--contenant tous les blocs hotel-->
-                <div class="les_hotels"> 
-                    <!--un bloc par hotel contenant 2 blocs :photo et nom+prix+note-->                   
-                    <div class="aubergelacannebiere">
-                        <!--lien pour clics sur photo et bloc nom+prix+note de l'hotel-->
-                        <a href="#">
-                        <div class="photo">                        
-                        <img src="/images/hebergements/aubergelacannebiere.jpg" alt="photo auberge la Cannebière" />                           
-                        </div>
-                        <!--trois blocs--> 
-                        <div class="nometprixetnote">
-                            <h2>Auberge La Cannebières</h2>
-                            <h3>Nuit à partir de 25€</h3>                
-                                <span class="color-blue"> <i class="fas fa-star" style="color:blue"></i></span>
-                                <i class="fas fa-star" style="color:blue"></i>
-                                <i class="fas fa-star" style="color:blue"></i>
-                                <i class="fas fa-star" style="color:blue"></i>
-                                <i class="fas fa-star" style="color:grey"></i>                            
-                        </div>
-                        </a>
-                    </div>
-                    <div class="hotelduport">
-                        <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-                        <div class="photo">
-                        <img src="/images/hebergements/hotelduport.jpg" alt="photo hotel du port" />
-                        </div>
-                        <div class="nometprixetnote">
-                            <h2>Hôtel du port</h2>
-                            <h3>Nuit à partir de 52€</h3>
-                            <i class="fas fa-star" style="color:blue"></i>
-                                <i class="fas fa-star" style="color:blue"></i>
-                                <i class="fas fa-star" style="color:blue"></i>
-                                <i class="fas fa-star" style="color:blue"></i>
-                                <i class="fas fa-star" style="color:grey"></i>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="hotellesmouettes">
-                        <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-                        <div class="photo">
-                            <img src="/images/hebergements/hotellesmouettes.jpg" alt="photo hotel les mouettes" />
-                        </div>
-                        <div class="nometprixetnote">
-                            <h2>Hôtel Les mouettes</h2>
-                            <h3>Nuit à partir de 76€</h3>         
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:grey"></i>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="hoteldelamer">
-                        <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-                        <div class="photo">
-                            <img src="/images/hebergements/hoteldelamer.jpg" alt="photo hotel de la mer" />
-                        </div> 
-                        <div class="nometprixetnote">
-                            <h2>Hôtel de la mer</h2>
-                            <h3>Nuit à partir de 46€</h3>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:grey"></i>
-                        </div>
-                    </a>           
-                    </div>
-                    <div class="aubergelepanier">
-                        <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-                        <div class="photo">
-                            <img src="/images/hebergements/aubergelepanier.jpg" alt="photo auberge le panier" />
-                        </div>
-                        <div class="nometprixetnote">
-                            <h2>Auberge Le Panier</h2>
-                            <h3>Nuit à partir de 23€</h3>
-                            <i class="fas fa-star" style="color:blue"></i>
-                                <i class="fas fa-star" style="color:blue"></i>
-                                <i class="fas fa-star" style="color:blue"></i>
-                                <i class="fas fa-star" style="color:blue"></i>
-                                <i class="fas fa-star" style="color:grey"></i>
-                        </div>           
-                        </a>
-                    </div>
-                    <div class="hotelchezamina">
-                        <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-                        <div class="photo">
-                            <img src="/images/hebergements/hotelchezamina.jpg" alt="photo hotel chez amina" />
-                        </div> 
-                        <div class="nometprixetnote">
-                            <h2>Hôtel chez Amina</h2>
-                            <h3>Nuit à partir de 95€</h3>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:grey"></i>
-                        </div> 
-                        </a>            
-                    </div>
-               
-                </div><!--fin les_hotels-->
-                <h2>Afficher plus</h2>
+            <!--contenant tous les blocs hotel-->
+        <div class="les_hotels"> 
+        <!--un bloc par hotel contenant 2 blocs :photo et nom+prix+note-->                   
+            <div class="aubergelacannebiere">
+            <!--lien pour clics sur photo et bloc nom+prix+note de l'hotel-->
+            <a href="#">
+                <div class="photo">                        
+                    <img srcset="images\hebergements\aubergelacannebiere_med.jpg 1499w,
+                                 images\hebergements\aubergelacannebiere_sma.jpg 750w,
+                                 images\hebergements\aubergelacannebiere_lar.jpg 2997w"
+                         sizes="(min-width: 1280px) 375px,
+                                (max-width: 480px) 450px"
+                                alt="photo_auberge_de_la_cannebiere"/>                           
+                </div>
+                <!--trois blocs--> 
+                <div class="nometprixetnote">
+                    <h2>Auberge La Cannebières</h2>
+                    <h3>Nuit à partir de 25€</h3>                
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>                            
+                </div>
+            </a>
+            </div>
+            <div class="hotelduport">
+            <a href="#">
+                <div class="photo">
+                    <img srcset="images\hebergements\hotelduport_med.jpg 1368w,
+                                  images\hebergements\hotelduport_sma.jpg 684w"
+                         sizes="(min-width: 1280px) 375px,
+                                (max-width: 480px) 450px" 
+                        alt="photo_hotel_du_port"/>
+                </div>
+                <div class="nometprixetnote">
+                    <h2>Hôtel du port</h2>
+                    <h3>Nuit à partir de 52€</h3>                  
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                </div>
+            </a>
+            </div>
+            <div class="hotellesmouettes">
+            <a href="#">
+                <div class="photo">
+                    <img srcset="images\hebergements\hotellesmouettes_med.jpg 1500w,
+                                 images\hebergements\hotellesmouettes_sma.jpg 750w"
+                         sizes="(min-width: 1280px) 375px,
+                                (max-width: 480px) 450px" 
+                         alt="photo_hotel_les_mouettes"/>
+                </div>
+                <div class="nometprixetnote">
+                    <h2>Hôtel Les mouettes</h2>
+                    <h3>Nuit à partir de 76€</h3>         
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                </div>
+            </a>
+            </div>
+            <div class="hoteldelamer">
+            <a href="#">
+                <div class="photo">
+                    <img srcset="images\hebergements\hoteldelamer_med.jpg 1000w,
+                                 images\hebergements\hoteldelamer_sma.jpg 500w"
+                         sizes="(min-width: 1280px) 375px,
+                                (max-width: 480px) 450px"
+                         alt="photo_hotel_de_la_mer"/>
+                </div> 
+                <div class="nometprixetnote">
+                    <h2>Hôtel de la mer</h2>
+                    <h3>Nuit à partir de 46€</h3>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                </div>
+            </a>           
+            </div>
+            <div class="aubergelepanier">
+            <a href="#">
+                <div class="photo">
+                    <img srcset="images\hebergements\aubergelepanier_med.jpg 1303w,
+                                 images\hebergements\aubergelepanier_sma.jpg 652w"
+                         sizes="(max-width: 1080px) 375px,
+                                (max-width: 480px) 450px"      
+                         alt="photo_auberge_le_panier"/>
+                </div>
+                <div class="nometprixetnote">
+                    <h2>Auberge Le Panier</h2>
+                    <h3>Nuit à partir de 23€</h3>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                </div>           
+            </a>
+            </div>
+            <div class="hotelchezamina">
+            <a href="#">
+                <div class="photo">
+                    <img srcset="images\hebergements\hotelchezamina_med.jpg 972w,
+                                 images\hebergements\hotelchezamina_sma.jpg 486w"
+                         sizes="(min-width: 1280px) 375px,
+                                 (max-width: 480px) 450px"      
+                         alt="photo hotel chez amina" />
+                </div> 
+                <div class="nometprixetnote">
+                    <h2>Hôtel chez Amina</h2>
+                    <h3>Nuit à partir de 95€</h3>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                    <span class="color-blue"><i class="fas fa-star"></i></span>
+                </div> 
+            </a>            
+            </div>              
+        </div><!--fin les_hotels-->
+        <h2>Afficher plus</h2>
     </div><!--fin hébergements-->
     <!--quatre blocs : un bloc titre + logo et trois blocs hotel-->
     <aside>
         <div class="titreetflechequimonte">
             <h1>Les plus populaires</h1>
             <span><i class="fas fa-chart-line"></i></span>
-        </div><!--fin titreetflechequimonte-->
-       
-            <div class="hotellesoleildumatin">             
-                <div class="photo">
-                    <!--lien lorsque clic sur la photo-->
-                    <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-                    <!--insertion photo hotel-->
-                    <img src="/images/hebergements/hotellesoleildumatin.jpg" alt="photo hotellesoleildumatin" />
-                    </a><!--fin lien clic sur la photo-->
+        </div><!--fin titreetflechequimonte-->      
+        <div class="hotellesoleildumatin">
+            <a href="#">
+            <div class="photo">         
+            <!--insertion photo hotel-->
+                <img srcset="images\hebergements\hotellesoleildumatin_lar.jpg 2125w,
+                             images\hebergements\hotellesoleildumatin_med.jpg 1063w,
+                             images\hebergements\hotellesoleildumatin_sma.jpg 532w"
+                
+                     sizes="(min-width: 1280px) 375px,
+                            (max-width: 480px) 450px" 
+                     alt="photo hotellesoleildumatin"/>
+            </div>
+            <!--bloc contenant deux blocs : bloc titres et bloc étoiles--> 
+            <div class="nometprixetnote">
+                <h2>Hôtel Le soleil du matin</h2>
+                <h3>Nuit à partir de 128€</h3>
+                <div class="les_etoiles"><!--bloc les étoiles-->
+                    <span class="color-blue"><i class="fas fa-star fa-xs" ></i></span>
+                    <span class="color-blue"><i class="fas fa-star fa-xs"></i></span>
+                    <span class="color-blue"><i class="fas fa-star  fa-xs"></i></span>
+                    <span class="color-blue"><i class="fas fa-star  fa-xs" ></i></span>
+                    <span class="color-blue"><i class="fas fa-star  fa-xs" ></i></span>
                 </div>
-                <!--bloc contenant deux blocs : bloc titres et bloc étoiles--> 
-                <div class="nometprixetnote">
-                    <!--lien lorsque clic sur le bloc nomprixnote-->
-                    <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-                    <div class="nometprix"><!--bloc de deux titres-->
-                    <h2>Hôtel Le soleil du matin</h2>
-                    <h3>Nuit à partir de 128€</h3>
-                    </div> <!--fin nometprix-->  
-                    <div class="les_etoiles"><!--bloc les étoiles-->
-                        <span class="color-blue">
-                            <i class="fas fa-star" ></i>
-                        </span>
-                        <span class="color-blue"><i class="fas fa-star"></i></span>
-                        <span class="color-blue"><i class="fas fa-star"></i></span>
-                        <span class="color-blue"><i class="fas fa-star" ></i></span>
-                        <span class="color-blue"><i class="fas fa-star" ></i></span>
-                    </span></div>
-                    </a><!--fin lien lorsque clic sur le bloc nomprixnote-->
+            </a>        
+            </div><!--fin nometprixetnote--> 
+            
+        </div><!--fin hotel le soleil du matin-->
+        <div class="aucoeurdeleau">
+            <a href="#">
+            <div class="photo">
+                <img srcset="images\hebergements\aucoeurdeleau-lar.jpg 2016w,
+                             images\hebergements\aucoeurdeleau_med.jpg 1008w,
+                             images\hebergements\aucoeurdeleau_sma.jpg 504w"
+                    sizes=" (min-width: 1280px) 375px,
+                            (max-width: 480px) 450px"     
+                    alt="photo aucoeurdeleau"/>
+            </div> 
+            <div class="nometprixetnote">
+                <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                <h3>Nuit à partir de 71€</h3>
+                <div class="les_etoiles">
+                    <span class="color-blue"><i class="fas fa-star fa-xs"></i></span>
+                    <span class="color-blue"><i class="fas fa-star fa-xs"></i></span>
+                    <span class="color-blue"><i class="fas fa-star fa-xs"></i></span>
+                    <span class="color-blue"><i class="fas fa-star fa-xs"></i></span>
+                    <span class="color-blue"><i class="fas fa-star fa-xs"></i></span>
+                </div><!--fin les_etoiles--> 
+            </a>             
+            </div><!--fin nometprixetnote-->           
+        </div><!--fin au coeur de l'eau-->
+        <div class="hoteltoutbleuetblanc">
+            <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
+            <div class="photo">               
+                <img srcset="images\hebergements\hoteltoutbleuetblanc_lar.jpg 2000w,
+                             images\hebergements\hoteltoutbleuetblanc_med.jpg 1000w,
+                             images\hebergements\hoteltoutbleuetblanc_sma.jpg 500w"
+                     sizes=" (min-width: 1280px) 375px,
+                             (max-width: 480px) 450px"       
+                alt="photo hoteltoutbleuetblanc" />
+            </div> 
+            <div class="nometprixetnote">
+                <h2>Hôtel Tout bleu et Blanc</h2>
+                <h3>Nuit à partir de 68€</h3>
+                <div class="les_etoiles">
+                    <span class="color-blue"><i class="fas fa-star fa-xs"></i></span>
+                    <span class="color-blue"><i class="fas fa-star fa-xs"></i></span>
+                    <span class="color-blue"><i class="fas fa-star fa-xs"></i></span>
+                    <span class="color-blue"><i class="fas fa-star fa-xs"></i></span>
+                    <span class="color-blue"><i class="fas fa-star fa-xs"></i></span>
                 </div>
-                   
-            </div><!--fin hotel le soleil du matin-->
-            <div class="aucoeurdeleau"> 
-                <div class="photo">
-                    <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-                    <img src="/images/hebergements/aucoeurdeleau.jpg" alt="photo aucoeurdeleau" />
-                    </a>
-                </div> 
-                <div class="nometprixetnote">
-                    <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-                    <h2>Au coeur de l'eau Chambres d'hôtes</h2>
-                    <h3>Nuit à partir de 71€</h3>
-                        <span class="les_etoiles">
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                        </span> 
-                    </a>               
-                </div>             
-            </div><!--fin au coeur de l'eau-->
-            <div class="hoteltoutbleuetblanc">
-                <div class="photo">
-                    <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-                    <img src="/images/hebergements/hoteltoutbleuetblanc.jpg" alt="photo hoteltoutbleuetblanc" />
-                    </a>
-                </div> 
-                <div class="nometprixetnote">
-                    <a href="https://www.google.com/search?q=les+ambassadeurs+holbein+images&rlz=1C1CHBF_frFR906FR906&tbm=isch&source=iu&ictx=1&fir=-6Da7m3ViBzFhM%252CRPgstFctlyWpRM%252C_&vet=1&usg=AI4_-kQejiOlJSu-ON2vGvZ98p7WYetV4A&sa=X&ved=2ahUKEwismfeM2ZLyAhXQxoUKHawCB6QQ9QF6BAgTEAE#imgrc=8xWK0DRJ9B64kM">
-                    <h2>Hôtel Tout bleu et Blanc</h2>
-                    <h3>Nuit à partir de 68€</h3>
-                        <span class="les_etoiles">
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                            <i class="fas fa-star" style="color:blue"></i>
-                        </span>
-                    </a>
-                </div>             
-            </div><!--fin hoteltoutbleuetblanc--> 
+            </a>
+            </div>             
+        </div><!--fin hoteltoutbleuetblanc--> 
         
     </aside>
 </section><!--fin aside et hébergements-->
