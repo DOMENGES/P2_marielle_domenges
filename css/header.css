@@ -1,7 +1,8 @@
 /*logo Reservia et menu en ligne*/
 header img
 {
-    width: 100px;
+    width: 10%;
+    padding-left: 1%;
 }
 /*alignement en ligne du menu*/
 /*suppression puce*/
@@ -10,15 +11,38 @@ header nav ul
 display: flex;
 flex-direction: row;
 list-style-type: none;
+font-size: 2em;
+font-weight: 600;
 }
 /*espacement-retrait droit de chaque ligne*/
 header nav li
 {
-padding-right: 30px;
+padding-right: 18%;
+}
+header nav li a:first-child
+{
+color:tomato;
 }
 /*suppression soulignement des liens ancres*/
 header nav li a
 {
     text-decoration: none;
-    color: #0065FC;
+}
+header nav ul li:last-child
+{
+color:blue;
+}
+@media screen and (max-width: 688px)
+{   
+    header img
+    {
+        margin-top: 2%;
+        width:20%;
+    }
+    header nav ul
+    {
+        font-size: 1em;
+        font-weight: 400;
+        justify-content: center; 
+    }
 }

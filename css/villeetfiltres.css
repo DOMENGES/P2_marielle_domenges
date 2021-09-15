@@ -1,122 +1,211 @@
-.saisievilleetfiltres h1
+#introduction_texte h1
 {
-   font-weight: bolder;
+    font-size:2.5em;
+    font-weight:900;
+    padding-left: 1%;
 }
-@media all and (max-device-width: 480px)
+#introduction_texte h2
 {
-    .saisievilleetfiltres h1
-    {
-        display: flex;
-        flex-wrap: wrap;
-    } 
-    .saisie_ville
-    {
-        display: flex;
-        flex-wrap: nowrap;
-    }
+    font-weight:500;
+    font-size:1.8em;
+    padding-left: 1%;
 }
-.saisievilleetfiltres h2
+#saisie_ville
 {
-    font-weight: lighter;
-    font-size: medium;
-}
-
-/*texte d'introduction + formulaire saisie et recherche ville + filtres + texte logements disponibles*/
-.saisie_ville
-{
-   /*aligner à gauche les blocs du bouton recherche villes */
+    width:25%;
+    margin-left: 1%;
     display: flex;
-    justify-content: start;
-
+    justify-content: center;
 }
-/*mise en forme logo situation*/
-.saisie_ville i
+#saisie_ville i
 {
-    background-color: #F2F2F2;
-    padding: 22px;
-    border-radius: 20px 0px 0px 20px;
-    border-left:solid 3px #F2F2F2;
-    border-bottom:solid 3px #F2F2F2;
-    border-top: solid 3px #F2F2F2;
-
+    font-size: 2.3em;
+    background-color: #f2f2f2;
+    padding:3%;
+    border-radius: 15px 0 0 15px;
+    border-top:solid 4px #f2f2f2;
+    border-left:solid 4px #f2f2f2;
+    border-bottom:solid 4px #f2f2f2;
 }
-/*mise en forme formulaire de saisie*/
-.saisie_ville input
+#saisie_ville input
 {
-
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 0px;
-    font-family: raleway;
-    font-size: medium;
-    font-weight:bolder;
-    border-bottom:solid 3px #F2F2F2;
-    border-top: solid 3px #F2F2F2;
+    border-top:solid 4px #f2f2f2;
+    border-bottom:solid 4px #f2f2f2;    
     border-left: none;
     border-right: none;
-    
+    font-size:2em;
+    font-weight: 700;
+    padding:3%;
 }
-/*mise en forme bouton rechercher*/
-.saisie_ville button
+#saisie_ville button
 {
-    border-bottom:solid 3px #F2F2F2;
-    border-top: solid 3px #F2F2F2;
-    border-right: solid 3px #F2F2F2;
-    border-left: none;
-    background-color: #0065fc;
-    padding: 15px;
-    font-family: raleway;
-    font-size: medium;
-    font-weight:bolder;
+    font-size: 2em;
+    font-weight: 700;
     color: white;
-    border-radius: 0px 20px 20px 0px;
+    background-color: #0065fc;
+    padding:3%;
+    border-radius: 0 15px 15px 0;
+    border-top:solid 4px #f2f2f2;
+    border-right:solid 4px #f2f2f2;
+    border-bottom:solid 4px #f2f2f2;
+    border-left: none;
 }
-/*sur une ligne tous les filtres*/
-.filtres
+#filtres
 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:flex-start;
-    margin-top: 30px;
+    margin-left: 1%;
 }
-.filtres h1
+#filtres h1
 {
-    margin-right: 20px;
-    font-size: medium;
+    font-size: 2.3em;
+    font-weight: 700;
+    margin-right: 1%;  
 }
-/*mise en forme chaque bouton*/
+.boutons_filtres
+{
+    width:65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .boutons_filtres button
 {
-    margin-right: 30px;
-    border-radius: 25px;
-    padding-left: 0px;
+    width:60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: white;
-    border:solid 3px #F2F2F2; 
+    margin:3%;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #f2f2f2;
 }
-/*mise en forme survol bouton*/
-.boutons_filtres button:hover
-{
-    color: blueviolet;
-    background-color: cyan;
-}
-/*mise en forme logo du bouton*/
 .boutons_filtres button i
 {
-    padding: 10px;
-    background-color: #DEEBFF;
-    border-radius: 100%;
-    margin-left: none;
+    font-size: 3em;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius:100%;
+    padding:5%;
+    margin-left: -5%;
 }
-/*mise en forme texte bouton*/
 .boutons_filtres button .nom_filtre
 {
-    font-size: medium;
-    font-weight: bold;
-    padding-right: 20px;
+    font-size:2.3em;
+    font-weight: 700;
+    padding-left: 3%;
 }
-.info_logements_disponibles h3
+#info_logements_disponibles
 {
-    font-size: medium;
-    font-weight: lighter;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1%;
+    margin-bottom: 2%;
+}
+#info_logements_disponibles .information
+{
+    margin-right: 1%;
+}
+#info_logements_disponibles i
+{
+    color:#0065fc;
+    font-size: 3em;
+}
+#info_logements_disponibles p
+{
+    font-weight:500;
+    font-size:1.8em; 
+}
+@media screen and (max-width: 688px)
+{
+    #introduction_texte h1
+    {
+        font-size:1.1em;
+        font-weight:900;
+        padding-left: 1%;
+    }
+    #introduction_texte h2
+    {
+        font-weight:700;
+        font-size:0.9em;
+        padding-left: 1%;
+    }
+    #saisie_ville
+    {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+    }
+    #saisie_ville i
+    {
+    font-size: 1em;
+    
+    }
+    #saisie_ville input
+    {
+    font-size:0.8em;
+    font-weight: 700;
+    padding:3%;
+    }
+    #saisie_ville button
+    {
+    font-size: 0.8em;
+    font-weight: 700;
+    }
+    #filtres
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    }
+    #filtres h1
+    {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-left: 1%;
+    }
+    .boutons_filtres
+    {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    .boutons_filtres button
+    {
+    width:40%;
+    height: 3.1em; ;
+    display: flex;
+    flex-direction: row;
+    border-width: 4px;
+    }
+    .boutons_filtres button i
+    {
+    font-size: 1.2em;
+    padding:6%;
+    margin-left: -4%;
+    }
+    .boutons_filtres button .nom_filtre
+    {
+    font-size:1.2em;
+    font-weight: 600;
+    }
+   
+    #info_logements_disponibles i
+    {
+    color:#0065fc;
+    font-size: 1.3em;
+    justify-content: flex-start;
+    }
+    #info_logements_disponibles p
+    {
+    font-weight:500;
+    font-size:0.9em;
+    padding-left: 1%; 
+    }
 }

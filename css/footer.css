@@ -1,14 +1,22 @@
 .noshebergements,.assistance
 {
-    margin-left: 500px;
+    margin-left: 28%;
 }
 footer h2
 {
-    font-size: larger;
-    font-weight: bolder;
+    font-size:2em;
+    font-weight: 600;
 }
 footer h3
 {
-    font-size:small;
-    font-weight: lighter;
+    font-size:1.5em;
+    font-weight: 400;
+}
+@media screen and (max-width: 688px)
+{
+    .noshebergements,.assistance
+    {
+    margin-left: 0%;
+
+    }
 }

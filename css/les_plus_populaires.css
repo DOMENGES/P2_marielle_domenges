@@ -4,10 +4,9 @@ aside
     background-color: #f2f2f2;
     border-radius: 20px;
     display: flex;
-    flex-direction: column; 
-    justify-content: space-evenly;
-    align-items: center;
-    width: 27%;
+    flex-direction: column;   
+    width: 24%;
+    padding: 1.5%;
 }
 /*mise en forme et position en ligne du titre et du logo*/
 .titreetflechequimonte
@@ -15,13 +14,16 @@ aside
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    width: 90%;  
+    width: 90%;
 }
 .titreetflechequimonte h1
 {
-    font-size: x-large;
+    font-size: 2.5em;
 }
-
+.titreetflechequimonte span i
+{
+    font-size:2.3em;
+}
 /*alignement vertical au centre du logo*/
 .titreetflechequimonte span
 {
@@ -29,44 +31,113 @@ aside
 }
 /*mise en forme des contenants de chaque hotel*/
 /*sur une ligne photo et nomprixetnote*/
-.hotellesoleildumatin, .aucoeurdeleau, .hoteltoutbleuetblanc
-{
+
+.hotellesoleildumatin,.aucoeurdeleau,.hoteltoutbleuetblanc
+    {
     background-color: white;
     display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    width:80%;
+    flex-direction: row;   
+    width:95%;
+    height: 18.8em;
+    margin-bottom: 15%;
     border-radius: 20px;
-    border : solid 5px white;
-}
-/*disposition en colonne des titres h2 et h3*/
-aside .nometprixetnote .nometprix
+    border : solid 10px white;    
+    }
+
+aside  .nometprixetnote
 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: start;
+width: 40%;
+height: 18.1em;
+padding-left: 2%;
 }
-/*disposition en ligne des 5 étoiles*/
-aside .nometprixetnote .les_etoiles
+aside .nometprixetnote h2
 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 70px;
+    font-size: 1.8em;
+    font-weight:900;
+    align-self: flex-start;
+    text-decoration: none;
 }
-/*mise en forme photo des hotels*/
-aside .photo img
-{border-radius: 20px 0px 0px 20px;
-height: 180px;
-width: 160px;
-margin-right: 10px;
+/*mise en forme prix de chaque hotel*/
+/*tous les hôtels du bloc aside_hébergement*/
+aside .nometprixetnote h3
+{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.matin, .eau, .blanc
+{
+    width: 43%;
+    height: 100%;
+    border-radius: 5% 0% 0% 5%;
+    object-fit: cover;
 }
 /*suppression mise en forme lien sur nometprixetnote*/
-aside .nometprixetnote a
+aside a
 {
-text-decoration: none;
-color: black;
+    text-decoration: none;
 }
-.color-blue{
-color:red;
+.les_etoiles .color-blue
+{
+color:#0065fc;
+font-size: 1.2em;
 }
+.les_etoiles .grey
+{
+color:#f2f2f2;
+font-size: 1.2em;
+}
+.les_etoiles
+{
+   height:40%;
+   width:45%;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-evenly;
+}
+@media screen and (max-width: 688px)
+    {
+        aside
+        {
+            width:98%;
+            border-radius: 0%;
+            padding:none;
+        }
+        .titreetflechequimonte h1
+        {
+        font-size: 0.8em;
+        }
+        .titreetflechequimonte span i
+        {
+        font-size:0.8em;
+        }
+        .hotellesoleildumatin,.aucoeurdeleau,.hoteltoutbleuetblanc
+        { 
+        width:95%;
+        height: 8em;
+        border : solid 5px white; 
+        margin-bottom: 5%;   
+        } 
+        aside .nometprixetnote h2
+        {
+        font-size: 0.9em;
+        font-weight:900;
+        align-self: flex-start;
+        text-decoration: none;
+        }
+
+        aside .nometprixetnote h3
+        {
+        font-size: 0.7em;
+        font-weight: 500;
+        }
+        .les_etoiles
+        {
+        display: flex;
+        height: 2em;        
+        align-items: flex-end;
+        } 
+        .les_etoiles i
+        {
+        font-size: 0.7em;
+        }
+    }

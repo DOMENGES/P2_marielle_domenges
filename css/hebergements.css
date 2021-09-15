@@ -1,85 +1,144 @@
 /*mise en forme bloc hébergements à Marseille*/
-.hebergements
-{background-color: #f2f2f2;
+#hebergements
+{
+    background-color: #f2f2f2;
     display: flex; 
     flex-direction: column;
-    justify-content: center;
     border-radius: 20px;
-    padding: 20px;
-    margin-right: 10px;
-    width: 65%;
+    padding: 1.5%;
+    margin-right: 1%;
+    width: 66%;
 }
-.hebergements h1
+#hebergements h1
 {
-   align-self: flex-start;
-   font-size: x-large;
+    font-size: 2.5em;
 }
-.hebergements h2
-{
-    font-size: larger;
-    font-weight:bolder;
-}
-/*en ligne tous les blocs hotel*/
-.hebergements .les_hotels
+
+/*en ligne tous les blocs hotel avec retour à la ligne*/
+#hebergements .les_hotels
 {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: space-between;
 }
-/*mise en forme chaque bloc hotel*/
-/*disposition en colonne bloc photo et bloc nomprixetnote*/
-/*centrer horizontalement les blocs photo et nomprixetnote*/
-.aubergelacannebiere,.hotelduport,.hotellesmouettes,.hoteldelamer,.aubergelepanier,.hotelchezamina
+.aubergelacannebiere, .hotelduport, .hotellesmouettes, .hoteldelamer, .aubergelepanier, .hotelchezamina
 {
-   
-    margin-right: 40px;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    padding-top: 10px;
-    width: 25%;
-    font-size: 0.8em;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    width: 30%;
+    height: 31.3em;
+    background-color: white;
+    border-radius: 20px;
+    border:solid 10px white;
+    margin-bottom: 3%;
 }
 /*marge intérieure bloc nomprixetnote*/
+/*dimension bloc nomprixetnote*/
 .les_hotels .nometprixetnote
 {
-    padding-top: 8px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    background-color: white;
-    border-radius: 0px 0px 15px 15px;
-    border:solid 3px white;
+    padding-left: 2%;
+}
+.les_hotels .nometprixetnote .color-blue
+{
+    color:#0065fc;
+    font-size:1em;
+}
+.les_hotels .nometprixetnote .grey
+{
+    color:#f2f2f2;
 }
 
-/*mise en forme et alignement du nom de chaque hotel*/
-.aubergelacannebiere,.hotelduport,.hotellesmouettes,.hoteldelamer,.aubergelepanier,.hotelchezamina, .nometprixetnote h2
+.cannebiere, .port, .mouettes, .mer, .panier, .amina
 {
-    font-size: medium;
-    font-weight: bold;
-    align-self: flex-start;
-}
-/*mise en forme prix de chaque hotel*/
-.aubergelacannebiere,.hotelduport,.hotellesmouettes,.hoteldelamer,.aubergelepanier,.hotelchezamina, .nometprixetnote h3
-{
-    font-size: small;
-font-weight: lighter;
-}
-/*dimension et bordure de chaque photo*/
-.les_hotels .photo img
-{
-    height: 170px;
-    width: 312px;
-    border-radius: 15px 15px 0px 0px;
-    border : solid 3px white;
-    border-bottom: none;
+    width: 100%;
+    height: 20.6em;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
 }
 /*suppression soulignement et couleur lien de chaque hotel*/
 .les_hotels a
 {
     text-decoration: none;
-    color: black;
+}
+#hebergements .nometprixetnote h2
+{
+    font-size: 1.8em;
+    font-weight:900;
+    align-self: flex-start;
+    text-decoration: none;
 }
 
+#hebergements .nometprixetnote h3
+{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+#hebergements h2
+{
+    font-size: 2em;
+}
+@media screen and (max-width: 688px)
+{
+    #hebergements
+    {
+        background-color:white;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        width: 99%;
+    } 
+    #hebergements h1
+    {
+    font-size: 0.8em;
+    }
+    .les_hotels
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .aubergelacannebiere, .hotelduport, .hotellesmouettes, .hoteldelamer, .aubergelepanier, .hotelchezamina
+    {
+    width: 99%;
+    height: 13em;
+    border-radius: 20px;
+    border:none;
+    box-shadow:  0 0 1em #f2f2f2, 0 0 1em #f2f2f2;
+    margin-bottom: 3%;
+    }
+    .cannebiere, .port, .mouettes, .mer, .panier, .amina
+    {
+    width: 100%;
+    height: 7em;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    }
+    .les_hotels .nometprixetnote
+    {
+    padding-bottom: 1.5%;
+    padding-left: 2%;
+    }
+    .nometprixetnote i
+    {
+        font-size:0.8em;
+    }
+    #hebergements .nometprixetnote h2
+    {
+    font-size: 0.9em;
+    font-weight:700;
+    align-self: flex-start;
+    text-decoration: none;
+    }
+    #hebergements .nometprixetnote h3
+    {
+    font-size: 0.7em;
+    font-weight: 500;
+    }
+    #hebergements h2
+    {
+    font-size: 1.1em;
+    }
+}
