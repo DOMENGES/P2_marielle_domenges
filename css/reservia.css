@@ -1,33 +1,47 @@
+
 body
 {
+    margin:0;
+    display: flex;
+    justify-content: center;
     background-color: white;
     color: black; 
     font-family: raleway;
-    font-size: 1em;
-    
+}
+body #bloc_general
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
 }
 header
 {
+    width: 98%;
+    height: 10%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 92%;
+    align-items: center;   
     justify-content: space-between;
+}
+#recherche_ville_selection_filtre
+{
+    display: flex;
+    flex-direction: column;
+    /*height: 30%;*/
 }
 #aside_et_hebergements
 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
-    height: 35%;
+    /*width: 100%;
+    height: 38%;*/
 }
-
-
 #activites
 {
     width: 98%;
-    height: 78em;
+    height: 38%;
     display: flex;
     flex-direction: column;
     margin-bottom: 8%;
@@ -48,25 +62,33 @@ footer
 {
     header
     {
-        width: 100%;
+        width: 99%; 
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-right: auto;
+        margin-left:auto;
+    }
+    #recherche_ville_selection_filtre
+    {
+    margin-left: 1%;
     }
     #aside_et_hebergements
-    {
+    {   
         display: flex;
         flex-direction: column-reverse;
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
     }
-   
     #activites
     {
     width: 98%;
     display: flex;
     flex-direction: column;
     margin-bottom: 1%;
-    padding-left: none;
-    padding-right: none;
+    padding-left: auto;
+    padding-right: auto;
     }
     footer
     {
@@ -76,5 +98,33 @@ footer
     padding: none;     
     }
 }
-/*@media all and (min-width: 688px) and (max-width: 992px)*/
+@media screen and (min-width: 689px) and (max-width: 992px)
+{
+    header
+    {
+        width: 99%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+    } 
+    #aside_et_hebergements
+    {
+        width:100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #aside_et_hebergements aside
+    {
+        width:99%;
+        height:15em;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+    }
+}
 /*@media all and (min-width: 993px) and (max-width:1312px)*/

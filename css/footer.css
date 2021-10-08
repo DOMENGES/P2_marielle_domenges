@@ -4,12 +4,12 @@
 }
 footer h2
 {
-    font-size:2em;
+    font-size:1em;
     font-weight: 600;
 }
 footer h3
 {
-    font-size:1.5em;
+    font-size:0.8em;
     font-weight: 400;
 }
 @media screen and (max-width: 688px)
@@ -17,6 +17,15 @@ footer h3
     .noshebergements,.assistance
     {
     margin-left: 0%;
-
+    }
+    footer h2
+    {
+    font-size:1.4em;
+    font-weight: 600;
+    }
+    footer h3
+    {
+    font-size:1.1em;
+    font-weight: 500;
     }
 }

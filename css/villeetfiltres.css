@@ -1,57 +1,61 @@
 #introduction_texte h1
 {
-    font-size:2.5em;
+    font-size:1em;
     font-weight:900;
     padding-left: 1%;
 }
 #introduction_texte h2
 {
     font-weight:500;
-    font-size:1.8em;
+    font-size:0.8em;
     padding-left: 1%;
 }
 #saisie_ville
 {
     width:25%;
+    height: 50%;
     margin-left: 1%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+
 }
 #saisie_ville i
 {
-    font-size: 2.3em;
+    font-size: 0.8em;
     background-color: #f2f2f2;
     padding:3%;
-    border-radius: 15px 0 0 15px;
-    border-top:solid 4px #f2f2f2;
-    border-left:solid 4px #f2f2f2;
-    border-bottom:solid 4px #f2f2f2;
+    border-radius: 10px 0 0 10px;
+    border-top:solid 1px #f2f2f2;
+    border-left:solid 1px #f2f2f2;
+    border-bottom:solid 1px #f2f2f2;
 }
 #saisie_ville input
 {
-    border-top:solid 4px #f2f2f2;
-    border-bottom:solid 4px #f2f2f2;    
+    border-top:solid 2px #f2f2f2;
+    border-bottom:solid 2px #f2f2f2;    
     border-left: none;
     border-right: none;
-    font-size:2em;
+    font-size:0.7em;
     font-weight: 700;
+    color:black;
     padding:3%;
 }
 #saisie_ville button
 {
-    font-size: 2em;
+    font-size: 0.7em;
     font-weight: 700;
     color: white;
     background-color: #0065fc;
     padding:3%;
-    border-radius: 0 15px 15px 0;
-    border-top:solid 4px #f2f2f2;
-    border-right:solid 4px #f2f2f2;
-    border-bottom:solid 4px #f2f2f2;
+    border-radius: 0 10px 10px 0;
+    border-top:solid 2px #f2f2f2;
+    border-right:solid 2px #f2f2f2;
+    border-bottom:solid 2px #f2f2f2;
     border-left: none;
 }
 #filtres
 {
+    height: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -59,20 +63,20 @@
 }
 #filtres h1
 {
-    font-size: 2.3em;
-    font-weight: 700;
+    font-size: 1.1em;
+    font-weight: 900;
     margin-right: 1%;  
 }
 .boutons_filtres
 {
-    width:65%;
+    width:80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .boutons_filtres button
 {
-    width:60%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -80,23 +84,23 @@
     margin:3%;
     border-radius: 40px;
     border-style: solid;
-    border-width: 7px;
+    border-width: 3px;
     border-color: #f2f2f2;
 }
 .boutons_filtres button i
 {
-    font-size: 3em;
+    font-size: 1em;
     color: #0065fc;
     background-color: #deebff;
     border-radius:100%;
     padding:5%;
-    margin-left: -5%;
+    margin-left: -7%;
 }
 .boutons_filtres button .nom_filtre
 {
-    font-size:2.3em;
+    font-size:0.9em;
     font-weight: 700;
-    padding-left: 3%;
+    padding-left: 5%;
 }
 #info_logements_disponibles
 {
@@ -113,12 +117,12 @@
 #info_logements_disponibles i
 {
     color:#0065fc;
-    font-size: 3em;
+    font-size: 1.2em;
 }
 #info_logements_disponibles p
 {
-    font-weight:500;
-    font-size:1.8em; 
+    font-weight:600;
+    font-size:0.8em; 
 }
 @media screen and (max-width: 688px)
 {
@@ -126,60 +130,63 @@
     {
         font-size:1.1em;
         font-weight:900;
-        padding-left: 1%;
+
     }
     #introduction_texte h2
     {
         font-weight:700;
         font-size:0.9em;
-        padding-left: 1%;
+
     }
     #saisie_ville
     {
     width:100%;
     display: flex;
     justify-content: center;
-    margin-left: 0%;
+    margin-top: 2%;
     }
     #saisie_ville i
     {
     font-size: 1em;
-    
+    padding:1.5%;
     }
     #saisie_ville input
     {
     font-size:0.8em;
     font-weight: 700;
-    padding:3%;
+    padding:1.5%;
     }
     #saisie_ville button
     {
     font-size: 0.8em;
     font-weight: 700;
+    padding:1.5%;
     }
     #filtres
     {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items:start;
+    margin-left: 0%;
     }
     #filtres h1
     {
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-weight: 700;
-    padding-left: 1%;
+    margin-left: 4%;
     }
     .boutons_filtres
     {
-    width:100%;
+    width:99%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: inherit;
     }
     .boutons_filtres button
     {
     width:40%;
-    height: 3.1em; ;
+    height: 3.9em; ;
     display: flex;
     flex-direction: row;
     border-width: 4px;
@@ -207,5 +214,91 @@
     font-weight:500;
     font-size:0.9em;
     padding-left: 1%; 
+    }
+}
+@media screen and (min-width: 689px) and (max-width: 992px)
+{
+    #introduction_texte h1
+    {
+        font-size:1.8em;
+        font-weight:900;
+        padding-left: 1%;
+    }
+    #introduction_texte h2
+    {
+        font-weight:600;
+        font-size:1.4em;
+        padding-left: 1%;
+    }
+    #saisie_ville
+    {
+    /*width:100%;*/
+    margin-left: auto;
+    margin-right: auto;
+    height: 4em;
+    justify-content: center;
+    align-items: center;
+    }
+    #saisie_ville i
+    {
+    font-size: 1.1em;
+    padding:5%;
+    }
+    #saisie_ville input
+    {
+    font-size:1.3em;
+    font-weight: 700;
+    padding:3%;
+    }
+    #saisie_ville button
+    {
+    font-size: 1.3em;
+    font-weight: 700;
+    padding:3%;
+    }
+    #filtres
+    {
+    /*display: flex;
+    flex-direction: row;*/
+    width:100%;
+    padding:0%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    #filtres h1
+    {
+    font-size: 1.1em;
+    padding-left: 2%;
+    }
+    #filtres .boutons_filtres
+    {
+    width:88%;
+    }
+    #filtres .boutons_filtres button
+    {
+    border-width: 3px;
+    margin-right: initial;
+    }
+    .boutons_filtres button i
+    {
+    font-size: 1.4em;
+    padding:7%;
+    }
+    .boutons_filtres button .nom_filtre
+    {
+    font-size: 1em;
+    }
+    #info_logements_disponibles
+    {
+    align-items: center;
+    }
+    #info_logements_disponibles .information
+    {
+    font-size: 1em;
+    }
+    #info_logements_disponibles p
+    {
+    font-size: 1em;
+    font-weight: 500;
     }
 }
