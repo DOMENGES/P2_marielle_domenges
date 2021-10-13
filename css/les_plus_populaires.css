@@ -95,15 +95,31 @@ font-size: 0.5em;
 color:#f2f2f2;
 font-size: 0.5em;
 }
-.les_etoiles
+.hotellesoleildumatin .les_etoiles
 {
-   height:40%;
+   height:3em;
    width:50%;
    display: flex;
    align-items: flex-end;
    justify-content: space-evenly;
 }
-@media screen and (max-width: 688px)
+.aucoeurdeleau .les_etoiles
+{
+    height:3.2em;
+    width:50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly; 
+}
+.hoteltoutbleuetblanc .les_etoiles
+{
+    height:3em;
+   width:50%;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-evenly;
+}
+@media screen and (min-width:425px) and (max-width: 688px)
     {
         aside
         {
@@ -154,9 +170,13 @@ font-size: 0.5em;
         border-radius:5% 0% 0% 5%;
         object-fit: cover;
         }
-        aside .matin_eau_bleu  .nometprixetnote
+        aside .matin_eau_bleu .nometprixetnote
         {
-        width:60%;
+            width:50%;
+            height: 98%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         aside .matin_eau_bleu .nometprixetnote h2
         {
@@ -170,17 +190,11 @@ font-size: 0.5em;
         font-size: 1em;
         font-weight: 500;
         }
-        aside .les_etoiles
-        {
-        display: flex;
-        justify-content: left;
-        height: 4em;       
-        align-items: flex-end;
-        } 
-        aside .les_etoiles span
+        
+        /*aside .les_etoiles span
         {
         width: 12%;   
-        }
+        }*/
         aside .les_etoiles i
         {
         font-size: 1.8em;
@@ -190,7 +204,6 @@ font-size: 0.5em;
     {
         .titreetflechequimonte
         {
-
             width: 98%;
             margin-bottom: 1%;
         }
@@ -207,13 +220,20 @@ font-size: 0.5em;
         .hotellesoleildumatin, .aucoeurdeleau, .hoteltoutbleuetblanc
         {
         width:30%;
-        /*height: 8em;
-        background-color: white;
-        display: flex;
-        flex-direction: row;   
-        margin-bottom: 10%;*/
         border-radius: 15px;
         border : solid 5px white;    
+        }
+        aside .matin_eau_bleu .nometprixetnote
+        {
+        width:48%;
+        }
+        .matin_eau_bleu .les_etoiles
+        {
+            height:25%;
+        }
+        .aucoeurdeleau .les_etoiles
+        {
+            height: 36%;
         }
   
     }
