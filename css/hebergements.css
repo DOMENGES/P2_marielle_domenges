@@ -82,7 +82,12 @@ justify-content: space-between;
     font-size: 1em;
     /*padding-top: 10%;*/
 }
-@media screen and (min-width:425px) and (max-width: 688px)
+@media and (max-width: 425px) 
+{
+    
+}
+/*
+@media screen and (max-width: 688px)
 {
     #hebergements
     {
@@ -113,7 +118,7 @@ justify-content: space-between;
         /*display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;*/
+        align-items: center;
     }
     .aubergelacannebiere, .hotelduport, .hotellesmouettes, .hoteldelamer, .aubergelepanier, .hotelchezamina
     {
@@ -166,7 +171,7 @@ justify-content: space-between;
     margin-left: 3.5%;
     }
 }
-@media screen and (min-width: 689px) and (max-width: 992px)
+@media screen and (max-width: 992px)
 {
     #hebergements
     {
@@ -215,4 +220,4 @@ justify-content: space-between;
     margin-bottom: 0.5em;
     }
 
-}
+}*/

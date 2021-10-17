@@ -58,7 +58,7 @@ footer
     padding: 3%;
       
 }
-@media screen and (min-width:425px) and (max-width: 688px)
+@media screen and (max-width:425px) 
 {
    header
    {
@@ -95,7 +95,11 @@ footer
     padding: none;     
     }
 }
-@media screen and (min-width: 689px) and (max-width: 992px)
+@media screen and (max-width: 688px)
+{
+    
+}
+@media screen and (max-width: 992px)
 {
     header
     {
@@ -124,4 +128,4 @@ footer
         margin-bottom: 3%;
     }
 }
-/*@media all and (min-width: 993px) and (max-width:1312px)*/
+/*@media screen and (max-width:1312px)*/

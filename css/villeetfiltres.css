@@ -98,7 +98,7 @@
 }
 .boutons_filtres button .nom_filtre
 {
-    font-size:0.9em;
+    font-size:1em;
     font-weight: 700;
     padding-left: 5%;
 }
@@ -124,7 +124,7 @@
     font-weight:600;
     font-size:0.8em; 
 }
-@media screen and (min-width:425px) and (max-width: 688px)
+@media screen and (max-width:425px) 
 {
     #introduction_texte h1
     {
@@ -218,6 +218,10 @@
     padding-left: 1%;
     }
 }
+/*@media screen and (max-width: 688px) 
+{
+    
+}
 @media screen and (min-width: 689px) and (max-width: 992px)
 {
     #introduction_texte h1
@@ -234,7 +238,7 @@
     }
     #saisie_ville
     {
-    /*width:100%;*/
+    width:100%;
     margin-left: auto;
     margin-right: auto;
     height: 4em;
@@ -260,8 +264,8 @@
     }
     #filtres
     {
-    /*display: flex;
-    flex-direction: row;*/
+    display: flex;
+    flex-direction: row;
     width:100%;
     padding:0%;
     margin-left: auto;
@@ -303,4 +307,4 @@
     font-size: 1em;
     font-weight: 500;
     }
-}
+}*/
