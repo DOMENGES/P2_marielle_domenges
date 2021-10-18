@@ -58,14 +58,8 @@ footer
     padding: 3%;
       
 }
-@media screen and (max-width:425px) 
+@media screen and (max-width:375px) 
 {
-   header
-   {
-       margin-right: auto;
-       margin-left: auto;
-       justify-content: space-between;
-   }
     #recherche_ville_selection_filtre
     {
     margin-left: 1%;
@@ -95,7 +89,7 @@ footer
     padding: none;     
     }
 }
-@media screen and (max-width: 688px)
+/*@media screen and (max-width: 688px)
 {
     
 }

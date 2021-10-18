@@ -119,7 +119,7 @@ font-size: 0.5em;
    align-items: flex-end;
    justify-content: space-evenly;
 }
-@media screen and (max-width:425px) 
+@media screen and (max-width:375px) 
     {
         aside
         {
@@ -180,24 +180,25 @@ font-size: 0.5em;
         }
         aside .matin_eau_bleu .nometprixetnote h2
         {
-        font-size: 1em;
+        font-size: 0.9em;
         font-weight:900;
-        align-self: flex-start;
-        text-decoration: none;
+        margin-bottom: 0%;
         }
         aside .matin_eau_bleu .nometprixetnote h3
         {
-        font-size: 1em;
-        font-weight: 500;
+        font-size: 0.8em;
+        font-weight: 700;
+        margin-top: 0%;
         }
-        
-        /*aside .les_etoiles span
+        .hotellesoleildumatin .les_etoiles,.hoteltoutbleuetblanc .les_etoiles
         {
-        width: 12%;   
-        }*/
-        aside .les_etoiles i
+        padding-bottom: 2%;
+        font-size: 1.4em;
+        }
+        .aucoeurdeleau .les_etoiles
         {
-        font-size: 1.8em;
+        padding-bottom: 1%;
+        font-size: 1.4em;
         }
     }
     /*@media  and (max-width: 688px) 
