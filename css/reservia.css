@@ -58,7 +58,7 @@ footer
     padding: 3%;
       
 }
-@media screen and (max-width:375px) 
+@media screen and (max-width:365px) 
 {
     #recherche_ville_selection_filtre
     {
@@ -89,37 +89,27 @@ footer
     padding: none;     
     }
 }
-/*@media screen and (max-width: 688px)
+@media screen and (max-width:750px)
+{
+
+}
+@media screen and (min-width:750px)
+{
+
+}
+@media screen and (min-width:750px) and (max-width: 1390px)
+{
+    #aside_et_hebergements
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #activites
+    {
+        height: 25em;
+    }
+}
+@media screen and (min-width:1390px) 
 {
     
 }
-@media screen and (max-width: 992px)
-{
-    header
-    {
-        width: 99%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-right: auto;
-        margin-left: auto;
-    } 
-    #aside_et_hebergements
-    {
-        width:100%;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    #aside_et_hebergements aside
-    {
-        width:99%;
-        height:15em;
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3%;
-    }
-}
-/*@media screen and (max-width:1312px)*/

@@ -124,7 +124,7 @@
     font-weight:600;
     font-size:0.8em; 
 }
-@media screen and (max-width:375px) 
+@media screen and (max-width:365px) 
 {
     #introduction_texte h1
     {
@@ -204,13 +204,7 @@
     font-size:1.1em;
     font-weight: 600;
     }
-   
-    /*#info_logements_disponibles i
-    {
-    color:#0065fc;
-    font-size: 5em;
-    justify-content: flex-start;
-    }*/
+
     #info_logements_disponibles p
     {
     font-weight:500;
@@ -218,49 +212,49 @@
     padding-left: 1%;
     }
 }
-/*@media screen and (max-width: 688px) 
+@media screen and (max-width:750px) 
 {
     
 }
-@media screen and (min-width: 689px) and (max-width: 992px)
+@media screen and (min-width:750px) and (max-width: 1390px)
 {
     #introduction_texte h1
     {
-        font-size:1.8em;
+        font-size:1.5em;
         font-weight:900;
-        padding-left: 1%;
+
     }
     #introduction_texte h2
     {
         font-weight:600;
         font-size:1.4em;
-        padding-left: 1%;
+
     }
     #saisie_ville
     {
     width:100%;
     margin-left: auto;
     margin-right: auto;
-    height: 4em;
+    height: 2.5em;
     justify-content: center;
     align-items: center;
     }
     #saisie_ville i
     {
     font-size: 1.1em;
-    padding:5%;
+    padding:1.8%;
     }
     #saisie_ville input
     {
-    font-size:1.3em;
+    font-size:1.2em;
     font-weight: 700;
-    padding:3%;
+    padding:1.4%;
     }
     #saisie_ville button
     {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 700;
-    padding:3%;
+    padding:1.5%;
     }
     #filtres
     {
@@ -307,4 +301,12 @@
     font-size: 1em;
     font-weight: 500;
     }
-}*/
+}
+@media screen and (min-width:750px) 
+{
+    
+}
+@media screen and (min-width:1390px) 
+{
+    
+}

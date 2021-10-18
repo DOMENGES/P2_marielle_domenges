@@ -82,7 +82,7 @@ justify-content: space-between;
     font-size: 1em;
     /*padding-top: 10%;*/
 }
-@media screen and (max-width: 375px) 
+@media screen and (max-width: 365px) 
 {
     #hebergements
     {
@@ -132,140 +132,33 @@ justify-content: space-between;
     {
     height: 7.8em;
     }
-
 }
-/*
-@media screen and (max-width: 688px)
+@media screen and (max-width:750px)
+{
+    
+}
+@media screen and (min-width:750px) and (max-width:1390px)
 {
     #hebergements
-    {
-        background-color:white; 
-        width:100%;
-        height: 107em;
-        display: flex;
-        justify-content: space-between;
-        border-radius: 0px;
-        padding:0%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    #hebergements h1
-    {
-    font-size: 1.2em;
-    font-weight: 900;
-    margin-top:4%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    }
-    #hebergements .les_hotels
     {
         width:98%;
-        height: 100em;
-        margin-left: auto;
-        margin-right: auto;
-        /*display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        background-color: white;
     }
     .aubergelacannebiere, .hotelduport, .hotellesmouettes, .hoteldelamer, .aubergelepanier, .hotelchezamina
     {
-    width: 97%;
-    height: 15em;
-    border-radius: 20px;
-    border:none;
-    box-shadow:  0 0 1em #cfcccc, 0 0 1em #f2f2f2;
-    margin-top: 1%;
-    margin-bottom: 0%;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    .cannebiere, .port, .mouettes, .mer, .panier, .amina
-    {
-    width: 100%;
-    height: 10em;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px; 
-    }
-    .les_hotels .nometprixetnote .color-blue
-    {
-    font-size:0.65em;
-    }
-    .les_hotels .nometprixetnote .grey
-    {
-    font-size:0.65em;
-    }
-    #hebergements .nometprixetnote h2
-    {
-    font-size: 1em;
-    font-weight:900;
-    text-decoration: none;
-    margin-top: 1%;
-    margin-bottom: 0.6%;
-    margin-left: 0%;
+        border:none;
+        box-shadow:  0 0 1em #f2f2f2, 0 0 1em #f2f2f2;
     }
     #hebergements .nometprixetnote h3
     {
-    font-size: 0.9em;
-    font-weight: 500;
-    margin-bottom: 1%;
-    margin-top: 0.5%;
-    }
-    #hebergements h2
-    {
-    font-size: 1.1em;
-    margin-left: 2%;
-    margin-left: 3.5%;
+        margin-bottom: 1%;
     }
 }
-@media screen and (max-width: 992px)
+@media screen and (min-width:750px) 
 {
-    #hebergements
-    {
-        width:99%;
-        height: 35em;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .aubergelacannebiere, .hotelduport, .hotellesmouettes, .hoteldelamer, .aubergelepanier, .hotelchezamina
-    {
-    width: 27%;
-    height: 11em;
-    border-radius: 20px;
-    border:solid 5px white;
-    margin-bottom: 3%;
-    }
-    .cannebiere, .port, .mouettes, .mer, .panier, .amina
-    {
-    height: 7em;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
-    }
     
-    .les_hotels .nometprixetnote .color-blue
-    {
-    color:#0065fc;
-    font-size:0.5em;
-    }
-    .les_hotels .nometprixetnote .grey
-    {
-    color:#f2f2f2;
-    font-size:0.5em;
-    }
-    #hebergements .nometprixetnote h2
-    {
-    font-size: 0.7em;
-    font-weight:900;
-    margin-bottom: 0.4em;
-    }
-
-    #hebergements .nometprixetnote h3
-    {
-    font-size: 0.6em;
-    font-weight: 500;
-    margin-bottom: 0.5em;
-    }
-
-}*/
+}
+@media screen and (min-width:1390px)
+{
+    
+}
