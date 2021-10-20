@@ -122,20 +122,20 @@ font-size: 0.55em;
     {
         aside
         {
-           width:100%;
+            width:100%;
+            height:42em;
             display: flex;
             flex-direction: column;
             border-radius: 0%;
             padding:0em;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center; 
         }
 
         .titreetflechequimonte
         {
-            width:98%;
-            display: flex;
-            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
         }
         .titreetflechequimonte h1
         {
@@ -147,7 +147,6 @@ font-size: 0.55em;
         {
         font-size:1em;
         justify-content: right;
-        margin-right: 1%;
         }
         aside .matin_eau_bleu
         {
@@ -168,37 +167,25 @@ font-size: 0.55em;
         {
         border-radius:5% 0% 0% 5%;
         object-fit: cover;
-        }
-        aside .matin_eau_bleu .nometprixetnote
-        {
-            width:50%;
-            height: 98%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+        }      
         aside .matin_eau_bleu .nometprixetnote h2
         {
-        font-size: 0.9em;
+        font-size: 0.95em;
         font-weight:900;
         margin-bottom: 0%;
         }
         aside .matin_eau_bleu .nometprixetnote h3
         {
-        font-size: 0.8em;
-        font-weight: 700;
+        font-size: 0.7em;
+        font-weight: 600;
         margin-top: 0%;
         }
-        .hotellesoleildumatin .les_etoiles,.hoteltoutbleuetblanc .les_etoiles
+        .les_etoiles
         {
-        padding-bottom: 2%;
+        height:3em;
         font-size: 1.4em;
         }
-        .aucoeurdeleau .les_etoiles
-        {
-        padding-bottom: 1%;
-        font-size: 1.4em;
-        }
+        
     }
     @media screen and (max-width:750px)
     {

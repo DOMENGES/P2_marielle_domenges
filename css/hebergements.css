@@ -91,6 +91,7 @@ justify-content: space-between;
     #hebergements
     {
         width:98%;
+        /*height:84em;*/
         margin-right: auto;
         margin-left: auto;
         padding:0%;
@@ -137,7 +138,7 @@ justify-content: space-between;
     height: 7.8em;
     }
 }
-@media screen and (max-width:750px)
+/*@media screen and (max-width:750px)
 {
     
 }
@@ -165,4 +166,4 @@ justify-content: space-between;
 @media screen and (min-width:1390px)
 {
     
-}
+}*/

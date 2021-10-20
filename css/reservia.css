@@ -41,7 +41,6 @@ header
     height: 45em;
     display: flex;
     flex-direction: column;
-
     margin-left: auto;
     margin-right: auto;
 }
@@ -72,11 +71,19 @@ footer
     #activites
     {
     width: 98%;
+    height:79em;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1%;
-    padding-left: auto;
-    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    #activites .toutelesactivites
+    {
+        display: flex;
+        height:77em;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
     }
     footer
     {
@@ -86,7 +93,7 @@ footer
     padding: none;     
     }
 }
-@media screen and (max-width:750px)
+/*@media screen and (max-width:750px)
 {
 
 }
@@ -109,4 +116,4 @@ footer
 @media screen and (min-width:1390px) 
 {
     
-}
+}*/
