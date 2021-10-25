@@ -125,7 +125,7 @@
     font-weight:500;
     font-size:1em; 
 }
-@media screen and (max-width:365px) 
+@media screen and (max-width:1390px) 
 {
     #introduction_texte h1
     {
@@ -213,101 +213,91 @@
     padding-left: 1%;
     }
 }
-@media screen and (max-width:750px) 
-{
-    
-}
-@media screen and (min-width:750px) and (max-width: 1390px)
+/*@media screen and (max-width:750px) 
 {
     #introduction_texte h1
     {
-        font-size:1.5em;
+        font-size:1.1em;
         font-weight:900;
-
     }
     #introduction_texte h2
     {
-        font-weight:600;
-        font-size:1.4em;
-
+        font-weight:700;
+        font-size:0.9em;
     }
     #saisie_ville
     {
     width:100%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 2.5em;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 2%;
     }
     #saisie_ville i
     {
-    font-size: 1.1em;
-    padding:1.8%;
+    font-size: 1em;
+    padding:1.5%;
     }
     #saisie_ville input
     {
-    font-size:1.2em;
+    font-size:1em;
     font-weight: 700;
-    padding:1.4%;
+    padding:1.5%;
     }
     #saisie_ville button
     {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 700;
     padding:1.5%;
     }
     #filtres
     {
     display: flex;
-    flex-direction: row;
-    width:100%;
-    padding:0%;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
+    align-items:start;
+    margin-left: 0%;
     }
     #filtres h1
     {
-    font-size: 1.1em;
-    padding-left: 2%;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-left: 4%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
     }
-    #filtres .boutons_filtres
+    .boutons_filtres
     {
-    width:88%;
+    width:99%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     }
-    #filtres .boutons_filtres button
+    .boutons_filtres button
     {
+    width:44%;
+    height: 3.2em; ;
+    display: flex;
+    flex-direction: row;
     border-width: 3px;
-    margin-right: initial;
     }
     .boutons_filtres button i
     {
-    font-size: 1.4em;
-    padding:7%;
+    font-size: 1.5em;
+    padding:6%;
+    margin-left: -5%;
+    margin-top: -5%;
+    margin-bottom: -5%;
     }
     .boutons_filtres button .nom_filtre
     {
-    font-size: 1em;
+    font-size:1em;
+    font-weight: 600;
     }
-    #info_logements_disponibles
-    {
-    align-items: center;
-    }
-    #info_logements_disponibles .information
-    {
-    font-size: 1em;
-    }
+
     #info_logements_disponibles p
     {
-    font-size: 1em;
-    font-weight: 500;
-    }
-}
-@media screen and (min-width:750px) 
-{
-    
-}
-@media screen and (min-width:1390px) 
-{
-    
+    font-weight:500;
+    font-size:1em;
+    padding-left: 1%;
+    }   
 }

@@ -3,43 +3,43 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height:98%;
+  height:98vh;
 }
-.bvieuxport, .bcalanques 
+.toutelesactivites .bvieuxport, .toutelesactivites .bcalanques 
 {
   width: 23%;
-  height: 42em;
+  height: 90vh;
   border-radius: 3%;
   box-shadow:  0 0 1em #f2f2f2, 0 0 1em #f2f2f2;
 }
-.vport, .calanques
+.bvieuxport .vport, .bcalanques .calanques
 {
   width: 100%;
   height: 92%;
   object-fit: cover;
   border-radius: 3% 3% 0 0;
 }
-.bfortetiles, .blagardeetlongchamp
+.toutelesactivites .bfortetiles, .toutelesactivites .blagardeetlongchamp
 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 23%;
-  height:42em;
+  height:90vh;
 
 }
 .bfortetiles .fortdepomegues
 {
   display: flex;
   flex-direction: column;
-  height: 55%;
+  height: 45vh;
   width: 100%; 
   border-radius: 3%;
   box-shadow:  0 0 1em #f2f2f2, 0 0 1em #f2f2f2;
 }
 .bfortetiles .fortdepomegues .pomegues
 {
-  height:53%;
+  /*height:80%;*/
   width:100%;
   object-fit: cover;
   border-radius: 3% 3% 0 0;
@@ -62,34 +62,26 @@
   object-fit: cover;
   border-radius: 3% 3% 0 0;
 }
-.blagardeetlongchamp .notredamedelagarde
+.blagardeetlongchamp .notredamedelagarde,.blagardeetlongchamp .parclongchamp
 {
   display: flex;
   flex-direction: column;
-  height: 48%;
+  height: 43vh;
   width: 100%; 
   border-radius: 3%;
   box-shadow:  0 0 1em #f2f2f2, 0 0 1em #f2f2f2;
 }
-.blagardeetlongchamp .parclongchamp
-{
-  display: flex;
-  flex-direction: column;
-  height: 48%;
-  width: 100%; 
-  border-radius: 3%;
-  box-shadow:  0 0 1em #f2f2f2, 0 0 1em #f2f2f2;
-}
+
 .blagardeetlongchamp .notredamedelagarde .lagarde
 {
-  height: 89%;
+  height: 92%;
   width: 100%;
   object-fit: cover;
   border-radius: 3% 3% 0 0;
 }
 .blagardeetlongchamp .parclongchamp .longchamps
 {
-  height: 80%;
+  height: 92%;
   width: 100%;
   object-fit: cover;
   border-radius: 3% 3% 0 0;
@@ -113,107 +105,85 @@
 }
 @media screen and (max-width: 365px)
 {
+  #activites .toutelesactivites
+    {
+        display: flex;
+        flex-direction: column;
+        width:99%;
+        height:95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
   #activites h1
   {
     font-size: 1.2em;
     font-weight: 900;
     margin-left: 3%;
   }
-  .bvieuxport, .bcalanques 
+  #activites .toutelesactivites .bvieuxport, #activites .toutelesactivites .bcalanques 
   {
   width: 99%;
-  height: 13em;
+  height: 16%;/*100%/6box*/
   border-radius: 20px;
   box-shadow:  0 0 1em #cfcccc, 0 0 1em #f2f2f2;
   margin-bottom: 3%; 
   }
+  .bvieuxport .vport, .bcalanques .calanques
+  {
+  width:100%;
+  height:80%;
+  }
   .bvieuxport h2, .bcalanques h2
   {
     width: 100%;
-    height:3.5em;
+    /*height:3.5em;*/
     font-size:1em;
     font-weight:900;
     padding-left: 2%;
     border-radius: 0 0 3% 3%;
   }
-  .bfortetiles, .blagardeetlongchamp
+  .toutelesactivites .bfortetiles, .toutelesactivites .blagardeetlongchamp
+  {
+    /*display: flex;
+    flex-direction: column;*/
+    height: 32%;
+    width: 100%; 
+    /*border-radius: 3%;
+    box-shadow:  0 0 1em #f2f2f2, 0 0 1em #f2f2f2;*/
+  }
+  .bfortetiles .fortdepomegues
+  {
+    height:45%;
+  }
+  .bfortetiles .ilesdufrioul
+  {
+    height:45%;
+  }
+  #activites .toutelesactivites h2
+  {
+    height:3%;
+  }
+  /*.toutelesactivites .bfortetiles, .toutelesactivites .blagardeetlongchamp
   {
   display: flex;
   flex-direction: column;
   justify-content:space-between;
   width: 99%;
-  height: 27em;
-  /*margin-bottom: 2%;*/
+  height: 32%;
+  margin-bottom: 2%;
   }
-  .fortdepomegues, .ilesdufrioul, .notredamedelagarde, .parclongchamp
+  .toutelesactivites .bfortetiles .fortdepomegues, .ilesdufrioul, .notredamedelagarde, .parclongchamp
   {
   width: 99%;
-  height: 10em;
+  height: 16%;
   border-radius: 20px;
   box-shadow:  0 0 1em #cfcccc, 0 0 1em #f2f2f2;
   margin-bottom: 2%;
-  }
-  /*.fortdepomegues h2
-  {
-  height:1em;
-  }
-  .vport, .calanques 
-  {
-  /*width: 100%;*/
-  /*height:10em;*/
-  /*object-fit: cover;
-  border-radius: 4% 4% 0 0;*/
-  }
+  }  
   .bfortetiles .fortdepomegues .pomegues
   {
   width:100%;
   height:26%;
   border-radius: 4% 4% 0 0;
-  }
-  
-  /*.pomegues, .frioul, .lagarde, .longchamps
-  {
-   height:40%;
-   width:100%; 
   }*/
 }
-/*@media screen and (max-width:365px) and (max-width:768px)
-{
-    .bvieuxport, .bcalanques,.bfortetiles, .blagardeetlongchamp 
-    {
-      height: 24em;
-    }
-    .vport, .calanques
-    {
-      height:85%;
-    }
-   .fortdepomegues
-   {
-     height: 10em;
-   }
-
-   .pomegues,.frioul
-   {
-     height:80%;
-   }
-   #activites h2
-   {
-    height:10%;
-   }
-}
-@media screen and (max-width:750px) 
-{
-  
-}
-@media screen and (min-width:750px) and (max-width:1390px) 
-{
-  
-}
-@media screen and (min-width:750px)
-{
-  
-}
-@media screen and (min-width:1390px)
-{
-  
-}*/
