@@ -5,7 +5,6 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between; */  
     width: 24%;
     padding: 1.5%;
 }
@@ -18,13 +17,12 @@
     margin-right: auto;
 }
 /*mise en forme et position en ligne du titre et du logo*/
-.titreetflechequimonte
+#aside_et_hebergements aside .titreetflechequimonte
 {
     display: flex;
     flex-direction:row;
     justify-content: space-between;
     width: 98%;
-    /*margin-bottom: 2%;*/
     margin-right: auto;
     margin-left: auto;
 }
@@ -102,21 +100,21 @@ font-size: 0.6em;
 color:#f2f2f2;
 font-size: 0.6em;
 }
-.les_etoiles
+aside  .nometprixetnote .les_etoiles
 {
-    height:14vh;
+    height:54%;
     width:50%;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;  
 }
 
-@media screen and (max-width:1390px) 
+@media screen and (max-width:365px) 
     {
-        aside
+        #aside_et_hebergements aside
         {
-            width:100%;
-            height:100%;
+            width:100vw;
+            /*height:100%;
             display: flex;
             flex-direction: column;
             border-radius: 0%;

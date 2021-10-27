@@ -12,7 +12,7 @@
 }
 #saisie_ville
 {
-    width:30%;
+    width:30vw;
     margin-left: 1%;
     display: flex;
     justify-content: left;
@@ -68,14 +68,14 @@
 }
 .boutons_filtres
 {
-    width:80%;
+    width:80vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .boutons_filtres button
 {
-    width: 30%;
+    width: 30vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -125,7 +125,7 @@
     font-weight:500;
     font-size:1em; 
 }
-@media screen and (max-width:1390px) 
+@media screen and (max-width:365px) 
 {
     #introduction_texte h1
     {
@@ -139,7 +139,7 @@
     }
     #saisie_ville
     {
-    width:100%;
+    width:100vw;
     display: flex;
     justify-content: center;
     margin-top: 2%;
@@ -172,21 +172,20 @@
     {
     font-size: 1.2em;
     font-weight: 700;
-    margin-left: 4%;
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     }
     .boutons_filtres
     {
-    width:99%;
+    width:99vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     }
     .boutons_filtres button
     {
-    width:44%;
+    width:40vw;
     height: 3.2em; ;
     display: flex;
     flex-direction: row;
@@ -208,9 +207,10 @@
 
     #info_logements_disponibles p
     {
-    font-weight:500;
+    font-weight:450;
     font-size:1em;
     padding-left: 1%;
+    justify-content: center;
     }
 }
 /*@media screen and (max-width:750px) 

@@ -39,7 +39,7 @@
 }
 .bfortetiles .fortdepomegues .pomegues
 {
-  /*height:80%;*/
+  height:105%;
   width:100%;
   object-fit: cover;
   border-radius: 3% 3% 0 0;
@@ -50,14 +50,14 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height:40%; 
+  height:40vh; 
   border-radius: 3%;
   box-shadow:  0 0 1em #f2f2f2, 0 0 1em #f2f2f2;
 }
 
 .bfortetiles .ilesdufrioul .frioul
 {
-  height: 70.5%;
+  height: 94%;
   width: 100%;
   object-fit: cover;
   border-radius: 3% 3% 0 0;
@@ -74,14 +74,14 @@
 
 .blagardeetlongchamp .notredamedelagarde .lagarde
 {
-  height: 92%;
+  height: 140%;
   width: 100%;
   object-fit: cover;
   border-radius: 3% 3% 0 0;
 }
 .blagardeetlongchamp .parclongchamp .longchamps
 {
-  height: 92%;
+  height: 120%;
   width: 100%;
   object-fit: cover;
   border-radius: 3% 3% 0 0;
@@ -99,11 +99,11 @@
 {
   font-size: 0.8em;
   font-weight:900;
-  height:3.5em;
+  /*height:10vh;*/
   padding-left: 2%;
   border-radius: 0 0 3% 3%;
 }
-@media screen and (max-width: 365px)
+/*@media screen and (max-width: 365px)
 {
   #activites .toutelesactivites
     {
@@ -123,7 +123,7 @@
   #activites .toutelesactivites .bvieuxport, #activites .toutelesactivites .bcalanques 
   {
   width: 99%;
-  height: 16%;/*100%/6box*/
+  height: 16%;
   border-radius: 20px;
   box-shadow:  0 0 1em #cfcccc, 0 0 1em #f2f2f2;
   margin-bottom: 3%; 
@@ -136,7 +136,7 @@
   .bvieuxport h2, .bcalanques h2
   {
     width: 100%;
-    /*height:3.5em;*/
+    height:3.5em;
     font-size:1em;
     font-weight:900;
     padding-left: 2%;
@@ -144,12 +144,12 @@
   }
   .toutelesactivites .bfortetiles, .toutelesactivites .blagardeetlongchamp
   {
-    /*display: flex;
-    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
     height: 32%;
     width: 100%; 
-    /*border-radius: 3%;
-    box-shadow:  0 0 1em #f2f2f2, 0 0 1em #f2f2f2;*/
+    border-radius: 3%;
+    box-shadow:  0 0 1em #f2f2f2, 0 0 1em #f2f2f2;
   }
   .bfortetiles .fortdepomegues
   {
@@ -185,5 +185,5 @@
   width:100%;
   height:26%;
   border-radius: 4% 4% 0 0;
-  }*/
-}
+  }
+}*/
